@@ -35,22 +35,24 @@ source 'http://rubygems.org'
 gem 'refinerycms',              '~> 1.0.9'
 gem "fog"
 
-group :development, :test do
+gem "sqlite3"
+
+group :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
   # Finally, run 'rake' to run the tests.
-  gem 'refinerycms-testing',    '~> 1.0.9'
-  gem 'capybara-webkit'
-  gem 'sqlite3'
-  
-  if RbConfig::CONFIG['target_os'] =~ /darwin/i
-    gem 'growl'
-  end
-
-  gem 'spork', '~> 0.9.0.rc', :platforms => :ruby
-  gem 'guard-spork', :platforms => :ruby
-  gem 'guard-rspec', :platforms => :ruby
-  gem 'generator_spec'
+#  gem 'refinerycms-testing',    '~> 1.0.9'
+#  gem 'capybara-webkit'
+#  gem 'sqlite3'
+#  
+#  if RbConfig::CONFIG['target_os'] =~ /darwin/i
+#    gem 'growl'
+#  end
+#
+#  gem 'spork', '~> 0.9.0.rc', :platforms => :ruby
+#  gem 'guard-spork', :platforms => :ruby
+#  gem 'guard-rspec', :platforms => :ruby
+#  gem 'generator_spec'
 end
 
 
