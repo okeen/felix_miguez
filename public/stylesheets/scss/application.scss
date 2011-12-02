@@ -1,0 +1,73 @@
+header {
+    //background: red;
+    $header_height: 100px;
+    height: $header_height;
+    width: 100%;
+    img {
+        height: $header_height;
+        float: left;
+    }
+
+    nav {
+        float: right;
+        margin: {
+            top: 20px;
+            right: 10px;
+        }
+        position:relative; 
+        overflow:hidden;
+        
+        .shadow {
+            height:10px; 
+            width:90%; 
+            left:5%; 
+            top:-9px; 
+            position:absolute; 
+            z-index:100; 
+            background:#888;
+            -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+            -o-box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+        }
+        ul {
+            margin:0; 
+            list-style:none; 
+            display:block; 
+            float:left; 
+            height:100px; 
+            position:relative; 
+            padding:0 60px;
+            li {
+                margin:0 5px 0 0; 
+                float:left;
+                -webkit-border-bottom-right-radius: 10px;
+                -webkit-border-bottom-left-radius: 10px;
+                -moz-border-radius: 0 0 10px 10px;
+                -o-border-radius: 0 0 10px 10px;
+                border-radius: 0 0 10px 10px;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                a {
+                    background:#aaa; 
+                    color:#ddd; 
+                    padding:0 10px; 
+                    display:block; 
+                    text-decoration:none;
+                    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+                    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+                    -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+                }
+                a:hover {
+                    background:#aaa; 
+                    color:#fff; 
+                    padding:10px 10px 0 10px;
+                }
+            }
+        }
+    }
+}
+
