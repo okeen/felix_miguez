@@ -35,6 +35,8 @@ source 'http://rubygems.org'
 gem 'refinerycms', '~> 1.0.9'
 gem "fog"
 gem "sqlite3"
+gem 'sass'
+gem "compass"
 
 group :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
