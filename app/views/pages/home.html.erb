@@ -1,0 +1,5 @@
+<% [:body].each do |section| %>
+  <%= content_tag :section, :id => section.to_s do %>
+    <%= @page.content_for(section).html_safe %>
+  <%  end %>
+<%  end %>

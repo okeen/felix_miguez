@@ -1,5 +1,12 @@
-<%= link_to image_tag(image_path "ETware.png"), root_path %>
-<%= render(:partial => "/shared/menu", :locals => {
-             :dom_id => 'menu',
-             :css => 'menu'
-           }) %>
+<div class="grid_4">
+  <div class="logo_container">
+    <%=  image_tag image_path("LogoFelix_Grande.png"),  :width=>"100%"%>
+  </div>
+</div>
+<div class=" prefix_2 grid_10">
+  <p class="logo"></p>
+  <%= render(:partial => "/shared/menu", :locals => {
+      :dom_id => 'menu',
+      :css => 'menu'
+    }) %>
+</div>

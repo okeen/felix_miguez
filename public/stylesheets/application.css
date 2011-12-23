@@ -1,74 +1,227 @@
-/* line 1, scss/application.scss */
+/* line 4, scss/application.scss */
 header {
-  height: 100px;
-  width: 100%;
-}
-/* line 6, scss/application.scss */
-header img {
-  height: 100px;
-  float: left;
+  margin-top: 30px !important;
+  margin-bottom: 10px !important;
+  height: 150px;
 }
 /* line 11, scss/application.scss */
-header nav {
-  float: right;
-  margin-top: 20px;
-  margin-right: 10px;
-  position: relative;
-  overflow: hidden;
+header div.logo_container {
+  height: 62px;
+  width: 221px;
 }
-/* line 20, scss/application.scss */
-header nav .shadow {
-  height: 10px;
-  width: 90%;
-  left: 5%;
-  top: -9px;
-  position: absolute;
-  z-index: 100;
-  background: #888;
-  -webkit-box-shadow: 0px 0px 20px black;
-  -moz-box-shadow: 0px 0px 20px black;
-  -o-box-shadow: 0px 0px 20px black;
-  box-shadow: 0px 0px 20px black;
+/* line 14, scss/application.scss */
+header div.logo_container img {
+  opacity: 1;
+  height: 100%;
+  float: left;
 }
-/* line 33, scss/application.scss */
-header nav ul {
-  margin: 0;
-  list-style: none;
+/* line 21, scss/application.scss */
+header p.logo {
+  color: #5e9cae;
+  font-size: 3.0em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 45px;
+  margin-right: 50px;
+}
+/* line 25, scss/application.scss */
+header p.logo span {
   display: block;
-  float: left;
-  height: 100px;
+  text-align: right !important;
   position: relative;
-  padding: 0 60px;
+  top: -15px;
 }
-/* line 41, scss/application.scss */
-header nav ul li {
-  margin: 0 5px 0 0;
+/* line 34, scss/application.scss */
+header nav#menu {
+  margin-left: 30px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+}
+/* line 37, scss/application.scss */
+header nav#menu ul {
+  text-transform: lowercase;
+  font-weight: bold;
+  float: right;
+  width: 100%;
+  list-style: none;
+}
+/* line 43, scss/application.scss */
+header nav#menu ul li {
+  opacity: 0.6;
+  height: 20px;
   float: left;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  line-height: 20px;
+  background: #c1e2e5;
+  /*-webkit-border-radius: 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  */
 }
 /* line 53, scss/application.scss */
-header nav ul li a {
-  background: #aaa;
-  color: #ddd;
-  padding: 0 10px;
+header nav#menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
   display: block;
   text-decoration: none;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
-/* line 64, scss/application.scss */
-header nav ul li a:hover {
-  background: #aaa;
+/* line 62, scss/application.scss */
+header nav#menu ul li a:hover {
   color: #fff;
-  padding: 10px 10px 0 10px;
+}
+/* line 67, scss/application.scss */
+header nav#menu ul li.selected, header nav#menu ul li:hover {
+  background: #5e9cae;
+}
+/* line 70, scss/application.scss */
+header nav#menu ul li.last {
+  margin-right: 0px;
+}
+
+/* line 74, scss/application.scss */
+body.main {
+  /*background-image: url("images/Fondo.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 0;*/
+}
+/* line 79, scss/application.scss */
+body.main section#left, body.main section#right {
+  display: none;
+}
+
+/* line 83, scss/application.scss */
+body h1, body h2, body h3, body h4, body p, body a {
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-align: justify;
+}
+/* line 87, scss/application.scss */
+body h1, body h2, body h3, body h4 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/* line 90, scss/application.scss */
+body h1, body h2, body h3, body h4, body strong {
+  color: #5e9cae;
+}
+/* line 93, scss/application.scss */
+body h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+/* line 97, scss/application.scss */
+body h2 {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+/* line 101, scss/application.scss */
+body h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+/* line 111, scss/application.scss */
+body h1#body_content_title {
+  display: none;
+}
+/* line 113, scss/application.scss */
+body section#body div.container {
+  background: #5e9cae;
+}
+/* line 118, scss/application.scss */
+body section#left, body section#right {
+  width: 50%;
+  height: 425px;
+}
+/* line 121, scss/application.scss */
+body section#left ul, body section#right ul {
+  margin-left: 40px;
+  list-style: cjk-ideographic;
+}
+/* line 126, scss/application.scss */
+body section#left img, body section#right img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+}
+/* line 131, scss/application.scss */
+body section#left {
+  width: 50%;
+  float: left;
+}
+/* line 136, scss/application.scss */
+body section#right {
+  float: right;
+}
+/* line 138, scss/application.scss */
+body section#right img {
+  margin-top: 45px;
+}
+/* line 143, scss/application.scss */
+body footer {
+  margin-left: 1px;
+  margin-top: 33px;
+  padding-top: 6px;
+  padding-left: 10px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #5e9cae;
+}
+
+/* line 155, scss/application.scss */
+div#home_texts_web p {
+  color: white;
+  margin-top: 60px;
+  font-size: 3em;
+}
+
+/* line 161, scss/application.scss */
+div#home_texts_rfid p {
+  color: white;
+  margin-top: 100px;
+  font-size: 3em;
+}
+
+/* line 167, scss/application.scss */
+div#home_texts_moviles p {
+  color: white;
+  margin-top: 50px;
+  font-size: 3em;
+}
+
+/* line 173, scss/application.scss */
+p#contact_message {
+  margin-top: 30px;
+  width: 100%;
+  font-size: 2em;
+  text-align: left;
+  font-family: 'Helvetica Neue', Helvetica;
+  color: #5e9cae;
+}
+
+/* line 184, scss/application.scss */
+div.project {
+  border-bottom: 2px solid #5e9cae;
+  margin-bottom: 30px;
+}
+/* line 185, scss/application.scss */
+div.project a {
+  text-decoration: none;
+  color: #5e9cae;
+}
+/* line 189, scss/application.scss */
+div.project img.logo {
+  margin: auto auto;
+  margin-top: 100px;
+}
+/* line 193, scss/application.scss */
+div.project ul.image_gallery {
+  display: block;
+  list-style: none;
+}
+/* line 196, scss/application.scss */
+div.project ul.image_gallery li {
+  float: left;
+  margin-top: 18px;
+  margin-bottom: 36px;
 }

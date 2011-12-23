@@ -1,73 +1,201 @@
+$felix_light: #C1E2E5;
+$felix_dark: #5E9CAE;
+
 header {
-    //background: red;
-    $header_height: 100px;
+    margin: {
+        top:30px !important; bottom:10px !important;
+    }
+    $header_height: 150px;
     height: $header_height;
-    width: 100%;
-    img {
-        height: $header_height;
-        float: left;
+    //background: white; opacity: 0.9;
+    div.logo_container {
+        height: 62px;
+        width:221px;
+        img {
+            opacity: 1;
+            height: 100%;
+            float: left;
+        }
+    }
+    //border-bottom: 2px solid $etware_blue !important;
+    p.logo {
+        color: $felix_dark;
+        font-size: 3.0em;
+        margin: {top: 0px; bottom: 0px; left: 45px; right: 50px;}
+        span {
+            display: block;
+            text-align: right !important;
+            //margin: {left: 35px;}
+            position: relative;
+            top: -15px;
+        }
     }
 
-    nav {
-        float: right;
-        margin: {
-            top: 20px;
-            right: 10px;
-        }
-        position:relative; 
-        overflow:hidden;
-        
-        .shadow {
-            height:10px; 
-            width:90%; 
-            left:5%; 
-            top:-9px; 
-            position:absolute; 
-            z-index:100; 
-            background:#888;
-            -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-            -o-box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-        }
+    nav#menu {
+        margin: {left: 30px; top: 70px; bottom: 50px;}
+        font-size: 1.2em;
         ul {
-            margin:0; 
+            text-transform: lowercase;
+            font-weight: bold;
+            float: right;
+            width: 100%;
             list-style:none; 
-            display:block; 
-            float:left; 
-            height:100px; 
-            position:relative; 
-            padding:0 60px;
             li {
-                margin:0 5px 0 0; 
+                opacity: 0.6;
+                height: 20px;
                 float:left;
-                -webkit-border-bottom-right-radius: 10px;
-                -webkit-border-bottom-left-radius: 10px;
-                -moz-border-radius: 0 0 10px 10px;
-                -o-border-radius: 0 0 10px 10px;
-                border-radius: 0 0 10px 10px;
-                -webkit-transition: all 0.2s ease-in-out;
-                -moz-transition: all 0.2s ease-in-out;
-                -o-transition: all 0.2s ease-in-out;
-                transition: all 0.2s ease-in-out;
+                line-height: 20px;
+                background: $felix_light;
+                /*-webkit-border-radius: 4px;
+                -moz-border-radius: 4px 4px 4px 4px;
+                border-radius: 4px 4px 4px 4px;
+                */
                 a {
-                    background:#aaa; 
-                    color:#ddd; 
-                    padding:0 10px; 
+                    display: block;
+                    //background:#aaa; 
+                    color: white;
+                    text-align: center;
+                
                     display:block; 
                     text-decoration:none;
-                    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-                    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-                    -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
                 }
                 a:hover {
-                    background:#aaa; 
+                    //background:#aaa; 
                     color:#fff; 
-                    padding:10px 10px 0 10px;
                 }
             }
+            li.selected, li:hover  {
+                background: $felix_dark;
+            }
+            li.last { margin-right: 0px;}
         }
     }
 }
+body.main {
+    /*background-image: url("images/Fondo.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 0;*/
+    section#left , section#right { display:none;}
+}
+body {
+    
+    h1, h2, h3, h4, p, a {
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        text-align: justify;
+    }
+    h1, h2, h3, h4 {
+        margin: {top: 15px; bottom: 20px;}
+    }
+    h1, h2, h3, h4, strong {
+        color: $felix_dark ;
+    }
+    h1 {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 1.7em;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        
+    }
+    div#page_container {
+        //border-left: 2px solid $etware_blue !important;
+        //border-right: 2px solid $etware_blue !important;
+        
+    }
+    h1#body_content_title {display:none;}
 
+    section#body div.container{
+        background: $felix_dark;
+
+        
+    }
+    section#left , section#right {
+        width: 50%;
+        height: 425px;
+        ul {
+            margin: {left: 40px;}
+            list-style: cjk-ideographic;
+        }
+        //h3 {text-align: center;}
+        img {
+            margin: {left: auto; right: auto; top:10px;}
+            display: block;
+        }
+    }
+    section#left {
+        width: 50%;
+        float: left;
+    }
+
+    section#right {
+        float:right;
+        img {   
+            margin: {top:45px;}
+        }
+    }
+
+    footer {
+        margin: {left: 1px; top: 33px;}
+        //border-top: 2px solid $etware_blue !important;
+        padding: {top:6px; left: 10px;}
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        color: $felix_dark;
+    }
+
+
+}
+
+//HOME specifics
+div#home_texts_web p {
+    color: white;
+    margin: {top:60px;}
+    font-size: 3em;
+}
+
+div#home_texts_rfid p {
+    color: white;
+    margin: {top:100px;}
+    font-size: 3em;
+}
+
+div#home_texts_moviles p {
+    color: white;
+    margin: {top:50px;}
+    font-size: 3em;
+}
+
+p#contact_message {
+    margin: {top: 30px;}
+    width: 100%;
+    font-size: 2em;
+    text-align: left;
+    font-family: 'Helvetica Neue', Helvetica;
+    color: $felix_dark;
+}
+
+//CUSTOMERS specifics
+
+div.project {
+    a {
+        text-decoration: none ;
+        color: $felix_dark;
+    }
+    img.logo {
+        margin: auto auto;
+        margin-top: 100px;
+    }
+    ul.image_gallery {
+        display: block;
+        list-style:none;
+        li {float:left;margin: {top: 18px; bottom: 36px;}}
+        
+    }
+    border-bottom: 2px solid $felix_dark;
+    margin-bottom: 30px;
+}

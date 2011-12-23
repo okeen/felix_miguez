@@ -2,12 +2,15 @@
 <%= render :partial => "/shared/html_tag" %>
   <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
   <%= render :partial => "/shared/head" %>
-  <%= stylesheet_link_tag 'screen.css', :media => 'screen, projection' %>
+  <%= stylesheet_link_tag 'reset.css', :media => 'screen, projection' %>
   <%= stylesheet_link_tag 'print.css', :media => 'print' %>
+  <%#= stylesheet_link_tag 'reset.css' %>
+  <%= stylesheet_link_tag 'text.css' %>
+  <%= stylesheet_link_tag '960.css', :media => 'all'%>
 
-  <body>
+  <body <%= "class='main'" if params[:action] == 'home' %> >
     <%= site_bar -%>
-    <div id="page_container">
+    <div id="page_container" class="container_16">
       <header>
         <%= render :partial => "/shared/header" -%>
       </header>
