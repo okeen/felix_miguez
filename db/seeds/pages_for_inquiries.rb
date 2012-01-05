@@ -9,7 +9,7 @@ if defined?(::Page)
   page_position = (::Page.maximum(:position, :conditions => {:parent_id => nil}) || -1)
 
   contact_us_page = ::Page.create({
-    :title => "Contact",
+    :title => "Contacto",
     :link_url => "/contact",
     :menu_match => "^/(inquiries|contact).*$",
     :deletable => false,

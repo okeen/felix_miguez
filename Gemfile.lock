@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-projects (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -201,5 +206,6 @@ DEPENDENCIES
   refinerycms-inquiries (~> 1.0)
   refinerycms-news (~> 1.2)
   refinerycms-page-images (~> 1.0)
+  refinerycms-projects (= 1.0)!
   sass
   sqlite3
