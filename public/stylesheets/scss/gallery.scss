@@ -1,0 +1,26 @@
+$felix_light: #C1E2E5;
+$felix_dark: #5E9CAE;
+
+div#project_list{
+    padding: 5px;
+    border: 1px solid $felix_dark;
+    ul {
+        list-style: none;
+        li {margin-left: 0px;
+    }
+    }
+    a {
+        
+        text-decoration: none;
+    }
+}
+
+div#gallery {
+    img.thumb{
+        height: 150px;
+    }
+    div.ad-image-wrapper {
+        width: 750;
+    }
+    
+}

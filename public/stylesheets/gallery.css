@@ -1,0 +1,26 @@
+/* line 4, scss/gallery.scss */
+div#project_list {
+  padding: 5px;
+  border: 1px solid #5e9cae;
+}
+/* line 7, scss/gallery.scss */
+div#project_list ul {
+  list-style: none;
+}
+/* line 9, scss/gallery.scss */
+div#project_list ul li {
+  margin-left: 0px;
+}
+/* line 12, scss/gallery.scss */
+div#project_list a {
+  text-decoration: none;
+}
+
+/* line 19, scss/gallery.scss */
+div#gallery img.thumb {
+  height: 150px;
+}
+/* line 22, scss/gallery.scss */
+div#gallery div.ad-image-wrapper {
+  width: 750;
+}
