@@ -9,11 +9,11 @@ $(function(){
         animate_first_image: false, // Should first image just be displayed, or animated in?
         animation_speed: 400, // Which ever effect is used to switch images, how long should it take?
         display_next_and_prev: true, // Can you navigate by clicking on the left/right on the image?
-        display_back_and_forward: true, // Are you allowed to scroll the thumb list?
+        //display_back_and_forward: true, // Are you allowed to scroll the thumb list?
         scroll_jump: 0, // If 0, it jumps the width of the container
         slideshow: {
             enable: false,
-            autostart: true,
+            autostart: false,
             speed: 5000,
             start_label: '',
             stop_label: '',

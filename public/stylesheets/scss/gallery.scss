@@ -6,8 +6,10 @@ div#project_list{
     border: 1px solid $felix_dark;
     ul {
         list-style: none;
-        li {margin-left: 0px;
-    }
+        li {
+            margin-left: 0px;
+            a {color: $felix_dark}
+        }
     }
     a {
         
@@ -20,7 +22,7 @@ div#gallery {
         height: 150px;
     }
     div.ad-image-wrapper {
-        width: 750;
+        //width: 750;
     }
     
 }
