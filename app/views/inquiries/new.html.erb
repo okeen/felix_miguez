@@ -1,5 +1,5 @@
 <% content_for :body_content_left do %>
-  <div class='inquiries grid_8'>
+  <div id="contact" class='inquiries grid_8'>
     <%=raw @page[Page.default_parts.first.to_sym] %>
 
     <%= form_for @inquiry do |f| %>
@@ -31,9 +31,7 @@
     <% end %>
   </div>
 <div class="grid_8">
-  <p id="contact_message">Escríbanos y nos pondremos en contacto en menos de 24h</p>
-  <%#*<iframe height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?channel=cs&amp;q=rua+da+rosa+27&amp;ie=UTF8&amp;hq=&amp;hnear=R%C3%BAa+da+Rosa,+27,+15701+Santiago+de+Compostela,+La+Coru%C3%B1a,+Galicia&amp;gl=es&amp;ll=42.871064,-8.548575&amp;spn=0.006802,0.016512&amp;t=h&amp;z=14&amp;vpsrc=6&amp;output=embed"></iframe>%>
-
+  <p id="contact_message">
 </div>
 
 <% end %>

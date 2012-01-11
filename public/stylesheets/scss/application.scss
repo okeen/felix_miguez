@@ -3,17 +3,17 @@ $felix_dark: #5E9CAE;
 
 header {
     margin: {
-        top:30px !important; bottom:10px !important;
+        top:20px !important; bottom:10px !important;
     }
     $header_height: 150px;
     height: $header_height;
     //background: white; opacity: 0.9;
     div.logo_container {
-        height: 62px;
-        width:221px;
+        //height: 83px;
+        //width: 299px;
         img {
             opacity: 1;
-            height: 100%;
+            //height: 100%;
             float: left;
         }
     }
@@ -44,6 +44,7 @@ header {
                 opacity: 0.6;
                 height: 20px;
                 float:left;
+                margin: {left: 1px !important; right: 1px !important;}
                 line-height: 20px;
                 background: $felix_light;
                 /*-webkit-border-radius: 4px;
@@ -170,6 +171,28 @@ div#home_texts_moviles p {
     font-size: 3em;
 }
 
+/*CONTACT*/
+
+div#contact .field {
+    label {
+        text-align: right;
+        margin: {right: 10px;}
+        color: $felix_dark;
+    }
+    input, textarea {
+        border: 2px solid $felix_light;
+        
+    }
+}
+div#contact .message_field {
+    margin: {left: 20px; top: 0px;}
+    label {
+        text-align: left;
+        margin: {left: 5px;}
+    
+    }
+    
+}
 p#contact_message {
     margin: {top: 30px;}
     width: 100%;
