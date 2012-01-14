@@ -41,6 +41,9 @@ $(function(){
     }
     
     container = $('#mosaic');
+    container.bind("click", function(){
+        window.location= "/projects"
+    })
     options={
             itemSelector : ".mosaic-item" ,
             filter: $("." + categories[current]),
