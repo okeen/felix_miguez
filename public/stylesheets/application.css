@@ -311,8 +311,7 @@ div#mosaic {
 }
 /* line 287, scss/application.scss */
 div#mosaic .mosaic-item {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 /* line 291, scss/application.scss */
 div#mosaic .mosaic-image img {
@@ -320,12 +319,13 @@ div#mosaic .mosaic-image img {
 }
 /* line 295, scss/application.scss */
 div#mosaic li.mosaic-item {
+  border-radius: 15px 0 0 0;
   display: block;
   list-style: none;
   height: 60px;
   background-color: #5e9cae;
 }
-/* line 299, scss/application.scss */
+/* line 300, scss/application.scss */
 div#mosaic li.mosaic-item h3 {
   color: white;
   text-align: center;

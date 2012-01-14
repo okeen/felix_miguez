@@ -285,7 +285,7 @@ div.project {
 div#mosaic {
     height: 600px !important;
     .mosaic-item {
-       margin: {top: 5px; bottom: 5px;}
+       margin: 5px
     }
     .mosaic-image {
         img {
@@ -293,6 +293,7 @@ div#mosaic {
         }
     }
     li.mosaic-item {
+        border-radius: 15px 0 0 0;
         display: block;
         list-style: none;
         height: 60px;

@@ -1,14 +1,14 @@
 <%= javascript_include_tag "jquery.isotope" %>
 <%= javascript_include_tag "home" %>
 
-<div class="grid_6">
+<div class="grid_4">
   <%= content_tag :section, :id => "body" do %>
     <%= @page.content_for(:body).html_safe %>
   <%  end %>
 
 </div>
 
-<div id="mosaic" class="container_10">
+<div id="mosaic" class="grid_12">
   <ul id="categories">
     <li class="category mosaic-item publi grid_4"><h3>publicidad</h3></li>
     <li class="category mosaic-item publicaciones grid_4"><h3>publicaciones</h3></li>
@@ -25,7 +25,7 @@
     <%= image_tag "ETware.png" %>
   </div>
   <div class="mosaic-image corporativo mosaic-item publi publicaciones">
-    <%= image_tag "loader.gif" %>
+    <%= image_tag "big-fat-men-pictures-wrestlers.jpg" %>
   </div>
   <div class="mosaic-image mosaic-item corporativo publi publicaciones">
     <%= image_tag "LogoFelix_Peque.png" %>
