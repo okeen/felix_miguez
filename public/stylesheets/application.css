@@ -88,7 +88,7 @@ body.main section#left, body.main section#right {
 }
 
 /* line 84, scss/application.scss */
-body h1, body h2, body h3, body h4, body p, body a {
+body h1, body h2, body h3, body h4, body p, body a, body li {
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   text-align: justify;
 }
@@ -307,9 +307,27 @@ div.project ul.image_gallery li {
 
 /* line 285, scss/application.scss */
 div#mosaic {
-  height: 400px !important;
+  height: 600px !important;
 }
-/* line 288, scss/application.scss */
+/* line 287, scss/application.scss */
+div#mosaic .mosaic-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 291, scss/application.scss */
 div#mosaic .mosaic-image img {
   width: 100%;
+}
+/* line 295, scss/application.scss */
+div#mosaic li.mosaic-item {
+  display: block;
+  list-style: none;
+  height: 60px;
+  background-color: #5e9cae;
+}
+/* line 299, scss/application.scss */
+div#mosaic li.mosaic-item h3 {
+  color: white;
+  text-align: center;
+  margin-top: 17px;
 }

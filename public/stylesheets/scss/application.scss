@@ -81,7 +81,7 @@ body.main {
 }
 body {
     
-    h1, h2, h3, h4, p, a {
+    h1, h2, h3, h4, p, a , li{
         font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
         text-align: justify;
     }
@@ -283,11 +283,25 @@ div.project {
 }
 
 div#mosaic {
-    height: 400px !important;
+    height: 600px !important;
+    .mosaic-item {
+       margin: {top: 5px; bottom: 5px;}
+    }
     .mosaic-image {
         img {
             width: 100%;
         }
+    }
+    li.mosaic-item {
+        display: block;
+        list-style: none;
+        height: 60px;
+        h3 {
+            color: white;
+            text-align: center;
+            margin-top:17px;
+        }
+        background-color: $felix_dark;
     }
      
 }

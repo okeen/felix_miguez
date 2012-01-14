@@ -1,16 +1,18 @@
 
 relayout = function(){
+    current = (current+1) %3;
     container.isotope({filter:  $(".no_one")});
     setTimeout(function(){
         changeImageWidth();
-        container.isotope({filter: $(".mosaic-image")});
+        container.isotope({filter: $("." + categories[current])});
         setTimeout("relayout()", 5000);    
     }, 600);
     
 }
 changeImageWidth= function(){
         $(".mosaic-image").each(function(){
-            var width=  (2^(Math.ceil(Math.random() *3) )) +1;
+            var width=  Math.ceil(Math.random() *2)*2;
+        //    var width=  (2^(Math.ceil(Math.random() *3) )) +1;
             $(this).removeClass("grid_1 grid_2 grid_4");
             $(this).addClass("grid_" + width);
             $(this).width($(this).width -10);
@@ -19,16 +21,22 @@ changeImageWidth= function(){
 }
 
 $(function(){
+    current = 0;
+    categories = {
+            0: "publi",
+            1: "corporativo",
+            2: "publicaciones"
+        }
     container = $('#mosaic');
     container.imagesLoaded( function(){
         changeImageWidth();
         $('#mosaic').isotope({
             // options
-            itemSelector : '.mosaic-image',
+            itemSelector : ".mosaic-item" ,
+            filter: $("." + categories[current]),
             layoutMode : 'masonry',
             columnWidth: 150
-        });
-    
+        });    
     });
     setTimeout("relayout()", 5000);  
 });
