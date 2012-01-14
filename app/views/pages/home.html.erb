@@ -1,5 +1,30 @@
-<% [:body].each do |section| %>
-  <%= content_tag :section, :id => section.to_s do %>
-    <%= @page.content_for(section).html_safe %>
+<%= javascript_include_tag "jquery.isotope" %>
+<%= javascript_include_tag "home" %>
+
+<div class="grid_6">
+  <%= content_tag :section, :id => "body" do %>
+    <%= @page.content_for(:body).html_safe %>
   <%  end %>
-<%  end %>
+
+</div>
+
+<div id="mosaic" class="grid_10">
+  <div class="mosaic-image">
+    <%= image_tag "felixLogo.png" %>
+  </div>
+  <div class="mosaic-image">
+    <%= image_tag "rails.png" %>
+  </div>
+  <div class="mosaic-image" >
+    <%= image_tag "ETware.png" %>
+  </div>
+  <div class="mosaic-image">
+    <%= image_tag "loader.gif" %>
+  </div>
+  <div class="mosaic-image">
+    <%= image_tag "LogoFelix_Peque.png" %>
+  </div>
+  <div class="mosaic-image">
+    <%= image_tag "felixLogo.png" %>
+  </div>
+</div>
