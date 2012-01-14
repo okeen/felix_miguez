@@ -307,17 +307,18 @@ div.project ul.image_gallery li {
 
 /* line 285, scss/application.scss */
 div#mosaic {
+  margin-top: 80px;
   height: 600px !important;
 }
-/* line 287, scss/application.scss */
+/* line 288, scss/application.scss */
 div#mosaic .mosaic-item {
   margin: 5px;
 }
-/* line 291, scss/application.scss */
+/* line 292, scss/application.scss */
 div#mosaic .mosaic-image img {
   width: 100%;
 }
-/* line 295, scss/application.scss */
+/* line 296, scss/application.scss */
 div#mosaic li.mosaic-item {
   border-radius: 15px 0 0 0;
   display: block;
@@ -325,7 +326,7 @@ div#mosaic li.mosaic-item {
   height: 60px;
   background-color: #5e9cae;
 }
-/* line 300, scss/application.scss */
+/* line 301, scss/application.scss */
 div#mosaic li.mosaic-item h3 {
   color: white;
   text-align: center;

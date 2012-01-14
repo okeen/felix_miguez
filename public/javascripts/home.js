@@ -1,10 +1,15 @@
 
 relayout = function(){
     current = (current+1) %3;
-    container.isotope({filter:  $(".no_one")});
+    $.extend(options, {filter:  $(".no_one")});
+    container.isotope(options);
     setTimeout(function(){
+        container.data().isotope.shuffle();
         changeImageWidth();
-        container.isotope({filter: $("." + categories[current])});
+        $.extend(
+            options, {filter: $("." + categories[current])}
+        );
+        container.isotope(options);
         setTimeout("relayout()", 5000);    
     }, 600);
     
@@ -29,15 +34,24 @@ $(function(){
             2: "publicaciones"
         }
     container = $('#mosaic');
-    container.imagesLoaded( function(){
-        changeImageWidth();
-        $('#mosaic').isotope({
-            // options
+    options={
             itemSelector : ".mosaic-item" ,
             filter: $("." + categories[current]),
             layoutMode : 'masonry',
-            columnWidth: 200
-        });    
+            columnWidth: 200,
+            sortBy: 'rand',
+            getSortData : {
+              rand : function ( $elem ) {
+                  if ($elem.hasClass("category"))
+                     return 1;
+                 else
+                    return Math.random()*6 + 2;
+              }
+            }
+    };
+    container.imagesLoaded( function(){
+        changeImageWidth();
+        $('#mosaic').isotope(options);
     });
     setTimeout("relayout()", 5000);  
 });
