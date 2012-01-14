@@ -30,7 +30,8 @@ header {
             top: -15px;
         }
     }
-
+    nav {float: right;}
+    
     nav#menu {
         margin: {left: 30px; top: 70px; bottom: 50px;}
         font-size: 1.2em;
@@ -283,10 +284,12 @@ div.project {
 }
 
 div#mosaic {
-    margin: {top: 80px;}
+    margin: {top: 80px; right: 0px !important; left: 0px;}
     height: 600px !important;
+    width: 720px !important;
+    float: right;
     .mosaic-item {
-       margin: 5px
+       margin: 10px
     }
     .mosaic-image {
         img {

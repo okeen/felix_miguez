@@ -25,14 +25,18 @@ header p.logo span {
   position: relative;
   top: -15px;
 }
-/* line 34, scss/application.scss */
+/* line 33, scss/application.scss */
+header nav {
+  float: right;
+}
+/* line 35, scss/application.scss */
 header nav#menu {
   margin-left: 30px;
   margin-top: 70px;
   margin-bottom: 50px;
   font-size: 1.2em;
 }
-/* line 37, scss/application.scss */
+/* line 38, scss/application.scss */
 header nav#menu ul {
   text-transform: lowercase;
   font-weight: bold;
@@ -40,7 +44,7 @@ header nav#menu ul {
   width: 100%;
   list-style: none;
 }
-/* line 43, scss/application.scss */
+/* line 44, scss/application.scss */
 header nav#menu ul li {
   opacity: 0.6;
   height: 20px;
@@ -54,7 +58,7 @@ header nav#menu ul li {
   border-radius: 4px 4px 4px 4px;
   */
 }
-/* line 54, scss/application.scss */
+/* line 55, scss/application.scss */
 header nav#menu ul li a {
   display: block;
   color: white;
@@ -62,99 +66,99 @@ header nav#menu ul li a {
   display: block;
   text-decoration: none;
 }
-/* line 63, scss/application.scss */
+/* line 64, scss/application.scss */
 header nav#menu ul li a:hover {
   color: #fff;
 }
-/* line 68, scss/application.scss */
+/* line 69, scss/application.scss */
 header nav#menu ul li.selected, header nav#menu ul li:hover {
   background: #5e9cae;
 }
-/* line 71, scss/application.scss */
+/* line 72, scss/application.scss */
 header nav#menu ul li.last {
   margin-right: 0px;
 }
 
-/* line 75, scss/application.scss */
+/* line 76, scss/application.scss */
 body.main {
   /*background-image: url("images/Fondo.png");
   background-position: center top;
   background-repeat: no-repeat;
   z-index: 0;*/
 }
-/* line 80, scss/application.scss */
+/* line 81, scss/application.scss */
 body.main section#left, body.main section#right {
   display: none;
 }
 
-/* line 84, scss/application.scss */
+/* line 85, scss/application.scss */
 body h1, body h2, body h3, body h4, body p, body a, body li {
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   text-align: justify;
 }
-/* line 88, scss/application.scss */
+/* line 89, scss/application.scss */
 body h1, body h2, body h3, body h4 {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-/* line 91, scss/application.scss */
+/* line 92, scss/application.scss */
 body h1, body h2, body h3, body h4, body strong {
   color: #5e9cae;
 }
-/* line 94, scss/application.scss */
+/* line 95, scss/application.scss */
 body h1 {
   font-size: 4em;
   margin-bottom: 20px;
 }
-/* line 98, scss/application.scss */
+/* line 99, scss/application.scss */
 body h2 {
   font-size: 1.7em;
   margin-bottom: 20px;
 }
-/* line 102, scss/application.scss */
+/* line 103, scss/application.scss */
 body h3 {
   font-size: 1.3em;
   margin-bottom: 10px;
 }
-/* line 112, scss/application.scss */
+/* line 113, scss/application.scss */
 body h1#body_content_title {
   display: none;
 }
-/* line 114, scss/application.scss */
+/* line 115, scss/application.scss */
 body section#body div.container {
   background: #5e9cae;
 }
-/* line 119, scss/application.scss */
+/* line 120, scss/application.scss */
 body section#left, body section#right {
   width: 50%;
   height: 425px;
 }
-/* line 122, scss/application.scss */
+/* line 123, scss/application.scss */
 body section#left ul, body section#right ul {
   margin-left: 40px;
   list-style: cjk-ideographic;
 }
-/* line 127, scss/application.scss */
+/* line 128, scss/application.scss */
 body section#left img, body section#right img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   display: block;
 }
-/* line 132, scss/application.scss */
+/* line 133, scss/application.scss */
 body section#left {
   width: 50%;
   float: left;
 }
-/* line 137, scss/application.scss */
+/* line 138, scss/application.scss */
 body section#right {
   float: right;
 }
-/* line 139, scss/application.scss */
+/* line 140, scss/application.scss */
 body section#right img {
   margin-top: 45px;
 }
-/* line 144, scss/application.scss */
+/* line 145, scss/application.scss */
 body footer {
   margin-left: 1px;
   margin-top: 33px;
@@ -164,21 +168,21 @@ body footer {
   color: #5e9cae;
 }
 
-/* line 156, scss/application.scss */
+/* line 157, scss/application.scss */
 div#home_texts_web p {
   color: white;
   margin-top: 60px;
   font-size: 3em;
 }
 
-/* line 162, scss/application.scss */
+/* line 163, scss/application.scss */
 div#home_texts_rfid p {
   color: white;
   margin-top: 100px;
   font-size: 3em;
 }
 
-/* line 168, scss/application.scss */
+/* line 169, scss/application.scss */
 div#home_texts_moviles p {
   color: white;
   margin-top: 50px;
@@ -186,29 +190,29 @@ div#home_texts_moviles p {
 }
 
 /*CONTACT*/
-/* line 177, scss/application.scss */
+/* line 178, scss/application.scss */
 div#contact .field label {
   text-align: right;
   margin-right: 10px;
   color: #5e9cae;
 }
-/* line 182, scss/application.scss */
+/* line 183, scss/application.scss */
 div#contact .field input, div#contact .field textarea {
   border: 2px solid #c1e2e5;
 }
 
-/* line 187, scss/application.scss */
+/* line 188, scss/application.scss */
 div#contact .message_field {
   margin-left: 20px;
   margin-top: 0px;
 }
-/* line 189, scss/application.scss */
+/* line 190, scss/application.scss */
 div#contact .message_field label {
   text-align: left;
   margin-left: 5px;
 }
 
-/* line 196, scss/application.scss */
+/* line 197, scss/application.scss */
 p#contact_message {
   margin-top: 30px;
   width: 100%;
@@ -218,27 +222,27 @@ p#contact_message {
   color: #5e9cae;
 }
 
-/* line 207, scss/application.scss */
+/* line 208, scss/application.scss */
 div.project {
   border-bottom: 2px solid #5e9cae;
   margin-bottom: 30px;
 }
-/* line 208, scss/application.scss */
+/* line 209, scss/application.scss */
 div.project a {
   text-decoration: none;
   color: #5e9cae;
 }
-/* line 212, scss/application.scss */
+/* line 213, scss/application.scss */
 div.project img.logo {
   margin: auto auto;
   margin-top: 100px;
 }
-/* line 216, scss/application.scss */
+/* line 217, scss/application.scss */
 div.project ul.image_gallery {
   display: block;
   list-style: none;
 }
-/* line 219, scss/application.scss */
+/* line 220, scss/application.scss */
 div.project ul.image_gallery li {
   float: left;
   margin-top: 18px;
@@ -247,19 +251,19 @@ div.project ul.image_gallery li {
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 229, scss/application.scss */
+/* line 230, scss/application.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 233, scss/application.scss */
+/* line 234, scss/application.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 241, scss/application.scss */
+/* line 242, scss/application.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -268,7 +272,7 @@ div.project ul.image_gallery li {
   transition-duration: 0.8s;
 }
 
-/* line 248, scss/application.scss */
+/* line 249, scss/application.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -276,7 +280,7 @@ div.project ul.image_gallery li {
   transition-property: height, width;
 }
 
-/* line 255, scss/application.scss */
+/* line 256, scss/application.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -285,7 +289,7 @@ div.project ul.image_gallery li {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 266, scss/application.scss */
+/* line 267, scss/application.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -297,7 +301,7 @@ div.project ul.image_gallery li {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 278, scss/application.scss */
+/* line 279, scss/application.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -305,20 +309,24 @@ div.project ul.image_gallery li {
   transition: none;
 }
 
-/* line 285, scss/application.scss */
+/* line 286, scss/application.scss */
 div#mosaic {
   margin-top: 80px;
+  margin-right: 0px !important;
+  margin-left: 0px;
   height: 600px !important;
+  width: 720px !important;
+  float: right;
 }
-/* line 288, scss/application.scss */
+/* line 291, scss/application.scss */
 div#mosaic .mosaic-item {
-  margin: 5px;
+  margin: 10px;
 }
-/* line 292, scss/application.scss */
+/* line 295, scss/application.scss */
 div#mosaic .mosaic-image img {
   width: 100%;
 }
-/* line 296, scss/application.scss */
+/* line 299, scss/application.scss */
 div#mosaic li.mosaic-item {
   border-radius: 15px 0 0 0;
   display: block;
@@ -326,7 +334,7 @@ div#mosaic li.mosaic-item {
   height: 60px;
   background-color: #5e9cae;
 }
-/* line 301, scss/application.scss */
+/* line 304, scss/application.scss */
 div#mosaic li.mosaic-item h3 {
   color: white;
   text-align: center;

@@ -6,9 +6,10 @@ relayout = function(){
     setTimeout(function(){
         container.data().isotope.shuffle();
         changeImageWidth();
-        $.extend(
-            options, {filter: $("." + categories[current])}
-        );
+        $.extend(options, {
+            filter: $("." + categories[current]),
+            layoutMode: layouts[Math.ceil(Math.random()*3)]
+        });
         container.isotope(options);
         setTimeout("relayout()", 5000);    
     }, 600);
@@ -33,6 +34,12 @@ $(function(){
             1: "corporativo",
             2: "publicaciones"
         }
+    layouts = {
+            0: "masonry",
+            1: "fitColumns",
+            2: "fitRows"
+    }
+    
     container = $('#mosaic');
     options={
             itemSelector : ".mosaic-item" ,
