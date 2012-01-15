@@ -222,48 +222,21 @@ p#contact_message {
   color: #5e9cae;
 }
 
-/* line 208, scss/application.scss */
-div.project {
-  border-bottom: 2px solid #5e9cae;
-  margin-bottom: 30px;
-}
-/* line 209, scss/application.scss */
-div.project a {
-  text-decoration: none;
-  color: #5e9cae;
-}
-/* line 213, scss/application.scss */
-div.project img.logo {
-  margin: auto auto;
-  margin-top: 100px;
-}
-/* line 217, scss/application.scss */
-div.project ul.image_gallery {
-  display: block;
-  list-style: none;
-}
-/* line 220, scss/application.scss */
-div.project ul.image_gallery li {
-  float: left;
-  margin-top: 18px;
-  margin-bottom: 36px;
-}
-
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 230, scss/application.scss */
+/* line 212, scss/application.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 234, scss/application.scss */
+/* line 216, scss/application.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 242, scss/application.scss */
+/* line 224, scss/application.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -272,7 +245,7 @@ div.project ul.image_gallery li {
   transition-duration: 0.8s;
 }
 
-/* line 249, scss/application.scss */
+/* line 231, scss/application.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -280,7 +253,7 @@ div.project ul.image_gallery li {
   transition-property: height, width;
 }
 
-/* line 256, scss/application.scss */
+/* line 238, scss/application.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -289,7 +262,7 @@ div.project ul.image_gallery li {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 267, scss/application.scss */
+/* line 249, scss/application.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -301,7 +274,7 @@ div.project ul.image_gallery li {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 279, scss/application.scss */
+/* line 261, scss/application.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -309,7 +282,7 @@ div.project ul.image_gallery li {
   transition: none;
 }
 
-/* line 286, scss/application.scss */
+/* line 268, scss/application.scss */
 div#mosaic {
   cursor: pointer;
   margin-top: 80px;
@@ -319,15 +292,15 @@ div#mosaic {
   width: 720px !important;
   float: right;
 }
-/* line 292, scss/application.scss */
+/* line 274, scss/application.scss */
 div#mosaic .mosaic-item {
   margin: 10px;
 }
-/* line 296, scss/application.scss */
+/* line 278, scss/application.scss */
 div#mosaic .mosaic-image img {
   width: 100%;
 }
-/* line 300, scss/application.scss */
+/* line 282, scss/application.scss */
 div#mosaic li.mosaic-item {
   border-radius: 15px 0 0 0;
   display: block;
@@ -335,7 +308,7 @@ div#mosaic li.mosaic-item {
   height: 60px;
   background-color: #5e9cae;
 }
-/* line 305, scss/application.scss */
+/* line 287, scss/application.scss */
 div#mosaic li.mosaic-item h3 {
   color: white;
   text-align: center;

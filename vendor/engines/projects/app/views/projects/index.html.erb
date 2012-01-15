@@ -8,7 +8,7 @@
 <div id="project_list" class="grid_3">
 <ul id="projects" >
     <% @projects.each do |project| %>
-      <li>
+      <li data-project-id="<%=project.id%>" class="project_link">
         <%= link_to project.title, project_path(project) %>
       </li>
     <% end %>

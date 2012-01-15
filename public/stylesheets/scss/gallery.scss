@@ -3,12 +3,19 @@ $felix_dark: #5E9CAE;
 
 div#project_list{
     padding: 5px;
-    border: 1px solid $felix_dark;
+    height: 459px;
+    //border-right: 1px solid $felix_dark;
     ul {
         list-style: none;
-        li {
+        li.project_link {
             margin-left: 0px;
             a {color: $felix_dark}
+        }
+        li.project_link.selected {
+            a {
+                color: black;
+                font-weight: bolder;
+            }
         }
     }
     a {
@@ -37,4 +44,8 @@ ul#gallery {
 }
 .gv_filmstripWrap {
     
+ }
+ 
+ .gv_overlay, .gv_showOverlay{
+     opacity: 0.7;
  }

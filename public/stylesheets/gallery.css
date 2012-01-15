@@ -1,42 +1,52 @@
 /* line 4, scss/gallery.scss */
 div#project_list {
   padding: 5px;
-  border: 1px solid #5e9cae;
+  height: 459px;
 }
-/* line 7, scss/gallery.scss */
+/* line 8, scss/gallery.scss */
 div#project_list ul {
   list-style: none;
 }
-/* line 9, scss/gallery.scss */
-div#project_list ul li {
+/* line 10, scss/gallery.scss */
+div#project_list ul li.project_link {
   margin-left: 0px;
 }
-/* line 11, scss/gallery.scss */
-div#project_list ul li a {
+/* line 12, scss/gallery.scss */
+div#project_list ul li.project_link a {
   color: #5e9cae;
 }
-/* line 14, scss/gallery.scss */
+/* line 15, scss/gallery.scss */
+div#project_list ul li.project_link.selected a {
+  color: black;
+  font-weight: bolder;
+}
+/* line 21, scss/gallery.scss */
 div#project_list a {
   text-decoration: none;
 }
 
-/* line 21, scss/gallery.scss */
+/* line 28, scss/gallery.scss */
 ul#gallery img.thumb {
   height: 150px;
 }
 
-/* line 26, scss/gallery.scss */
+/* line 33, scss/gallery.scss */
 .gv_galleryWrap {
   background-color: #c1e2e5;
 }
 
-/* line 29, scss/gallery.scss */
+/* line 36, scss/gallery.scss */
 .gv_panel img {
   opacity: 1.0;
   background-color: white;
 }
 
-/* line 34, scss/gallery.scss */
+/* line 41, scss/gallery.scss */
 .gv_frame {
   background: white;
+}
+
+/* line 49, scss/gallery.scss */
+.gv_overlay, .gv_showOverlay {
+  opacity: 0.7;
 }

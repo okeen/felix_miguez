@@ -205,24 +205,6 @@ p#contact_message {
 
 //CUSTOMERS specifics
 
-div.project {
-    a {
-        text-decoration: none ;
-        color: $felix_dark;
-    }
-    img.logo {
-        margin: auto auto;
-        margin-top: 100px;
-    }
-    ul.image_gallery {
-        display: block;
-        list-style:none;
-        li {float:left;margin: {top: 18px; bottom: 36px;}}
-        
-    }
-    border-bottom: 2px solid $felix_dark;
-    margin-bottom: 30px;
-}
 /* Start: Recommended Isotope styles */
 
 /**** Isotope Filtering ****/
