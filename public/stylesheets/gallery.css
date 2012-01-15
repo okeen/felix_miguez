@@ -21,6 +21,22 @@ div#project_list a {
 }
 
 /* line 21, scss/gallery.scss */
-div#gallery img.thumb {
+ul#gallery img.thumb {
   height: 150px;
+}
+
+/* line 26, scss/gallery.scss */
+.gv_galleryWrap {
+  background-color: #c1e2e5;
+}
+
+/* line 29, scss/gallery.scss */
+.gv_panel img {
+  opacity: 1.0;
+  background-color: white;
+}
+
+/* line 34, scss/gallery.scss */
+.gv_frame {
+  background: white;
 }

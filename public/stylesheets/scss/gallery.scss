@@ -17,12 +17,24 @@ div#project_list{
     }
 }
 
-div#gallery {
+ul#gallery {
     img.thumb{
         height: 150px;
     }
-    div.ad-image-wrapper {
-        //width: 750;
+}
+
+.gv_galleryWrap {
+    background-color: $felix_light;    
+}
+.gv_panel img {
+      opacity: 1.0;
+      background-color: white;    
     }
     
+.gv_frame {
+    //margin: {bottom: 5px;}
+    background: white;
 }
+.gv_filmstripWrap {
+    
+ }
