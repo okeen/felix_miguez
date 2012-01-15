@@ -62,6 +62,7 @@ $(function(){
     container.imagesLoaded( function(){
         changeImageWidth();
         $('#mosaic').isotope(options);
+        container.removeClass("loading");
     });
     setTimeout("relayout()", 5000);  
 });

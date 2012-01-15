@@ -25,28 +25,38 @@ div#project_list a {
   text-decoration: none;
 }
 
-/* line 28, scss/gallery.scss */
-ul#gallery img.thumb {
-  height: 150px;
+/* line 27, scss/gallery.scss */
+ul#gallery {
+  visibility: hidden;
 }
 
-/* line 33, scss/gallery.scss */
+/* line 31, scss/gallery.scss */
+.gv_caption {
+  opacity: 0.8;
+  background: white;
+}
+
+/* line 35, scss/gallery.scss */
 .gv_galleryWrap {
   background-color: #c1e2e5;
 }
 
-/* line 36, scss/gallery.scss */
+/* line 38, scss/gallery.scss */
 .gv_panel img {
   opacity: 1.0;
   background-color: white;
 }
 
-/* line 41, scss/gallery.scss */
+/* line 43, scss/gallery.scss */
 .gv_frame {
+  background: black;
+}
+/* line 46, scss/gallery.scss */
+.gv_frame img {
   background: white;
 }
 
-/* line 49, scss/gallery.scss */
+/* line 54, scss/gallery.scss */
 .gv_overlay, .gv_showOverlay {
   opacity: 0.7;
 }

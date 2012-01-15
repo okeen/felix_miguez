@@ -846,6 +846,9 @@ startSlideshow: function() {
     this.playing = true;
     dom.gv_galleryWrap.everyTime(this.opts.transition_interval,'slideshow_'+this.id,function(){
         self.showNext();
+        if (self.opts.callbacks && self.opts.callbacks.imageChanged )
+            self.opts.callbacks.imageChanged.call(window, self.gvImages[self.iterator]);
+        
     });
 },
 		

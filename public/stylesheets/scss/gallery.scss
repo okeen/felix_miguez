@@ -25,11 +25,13 @@ div#project_list{
 }
 
 ul#gallery {
-    img.thumb{
-        height: 150px;
-    }
+    visibility: hidden;
 }
 
+.gv_caption {
+    opacity: 0.8;
+    background: white;
+    }
 .gv_galleryWrap {
     background-color: $felix_light;    
 }
@@ -40,7 +42,10 @@ ul#gallery {
     
 .gv_frame {
     //margin: {bottom: 5px;}
-    background: white;
+    background: black;
+    img {
+        background: white;  
+    }
 }
 .gv_filmstripWrap {
     

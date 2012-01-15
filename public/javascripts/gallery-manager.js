@@ -9,8 +9,11 @@ function selectGalleryItem(elem){
 }
 
 function showAndHideOverlay(){
-    gallery.showOverlay();
-    setTimeout("gallery.hideOverlay();", 2500)
+    setTimeout(function(){
+        gallery.showOverlay();
+        setTimeout("gallery.hideOverlay();", 2500);
+    }, 1200);
+    
 }
 
 $(function(){
@@ -27,7 +30,8 @@ $(function(){
        }
    });
    selectListProject(1);
-   setTimeout("showAndHideOverlay();", 1700);
+   gallery.startSlideshow()
+   setTimeout("showAndHideOverlay();", 1);
    $("li.project_link a").bind("click", function(e,elem){
        e.preventDefault();
        var dad = $(this).parent();

@@ -266,6 +266,7 @@ p#contact_message {
 }
 
 div#mosaic {
+    
     cursor: pointer ;
     margin: {top: 80px; right: 0px !important; left: 0px;}
     height: 600px !important;
@@ -294,3 +295,7 @@ div#mosaic {
      
 }
 
+.loading {
+    visibility: hidden;
+    
+ }
