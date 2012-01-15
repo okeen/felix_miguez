@@ -32,7 +32,7 @@ $(function(){
     categories = {
             0: "publi",
             1: "corporativo",
-            2: "publicaciones"
+            2: "editorial"
         }
     layouts = {
             0: "masonry",
