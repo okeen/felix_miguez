@@ -18,6 +18,7 @@ $(function(){
        panel_width: 728,
        show_overlays: true,
        show_captions: true,
+       filmstrip_position: 'top',
        callbacks: {
            imageChanged: function(image){
                selectListProject(image.attrs.project_id);

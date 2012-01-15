@@ -6,14 +6,31 @@
 <%= stylesheet_link_tag 'gallery.css' %>
 
 <div id="project_list" class="grid_3">
-<ul id="projects" >
-    <% @projects.each do |project| %>
-      <li data-project-id="<%=project.id%>" class="project_link">
+  <ul id="projects_publicidad" >
+    <% @projects.by_category("publicidad").each do |project| %>
+      <li data-project-id="<%=project.id%>" class="project_link publi">
         <%= link_to project.title, project_path(project) %>
       </li>
     <% end %>
   </ul>
 
+  <ul id="projects_publicaciones" >
+    <% @projects.by_category("publicaciones").each do |project| %>
+      <li data-project-id="<%=project.id%>" class="project_link publicaciones">
+        <%= link_to project.title, project_path(project) %>
+      </li>
+    <% end %>
+  </ul>
+
+  <ul id="projects_corporativo" >
+    <% @projects.by_category("corporativo").each do |project| %>
+      <li data-project-id="<%=project.id%>" class="project_link corporativo">
+        <%= link_to project.title, project_path(project) %>
+      </li>
+    <% end %>
+  </ul>
+
+  
   
 </div>
 
