@@ -28,7 +28,13 @@
       </div>
     </div>
   </div>
+
+  <div class='field'>
+    <%= f.label :category -%>
+    <%= f.text_field :category %>
+  </div>
   
+
   <div class='field'>
     <%= f.label :main_image -%>
     <%= render :partial => "/shared/admin/image_picker", :locals => {

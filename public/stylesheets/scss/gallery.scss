@@ -26,15 +26,30 @@ div#project_list{
     }
 }
 #gallery_container {
+    
     #thumbs_mosaic_container {
-        height: 220px;
+        height: 200px!important;
         border: 5px solid $felix_light;
-        
+        border-bottom: none;
         .thumb_container {
-            height: 30px;
-            width: 100px;
-            img {height: 100%; width: auto}
+            display: inline;
+            float: left;
+            background: black;
+            margin: 5px !important;
+            /*            height: 30px;
+            width: 100px;*/
+            overflow-y: none;
+            img {
+                width: 100%; 
+                height: inherit;
+                background: white;
+                opacity: 0.4;
+            }
+            img.active {opacity: 1.0}
         }
+        .width1 {width: 81px !important; height: 40px; }
+        .width2 {width: 172px !important;height: 90px;}
+        
     }
     ul#gallery {
         visibility: hidden;
