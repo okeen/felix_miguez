@@ -5,22 +5,23 @@ function selectListProject(projectId){
 
 function selectGalleryItem(elem){
     var projectid = elem.attr("data-project-id");
-    gallery.showByProject(projectid); 
+    galleries[currentCategory].showByProject(projectid); 
 }
 
 function showAndHideOverlay(){
     setTimeout(function(){
-        gallery.showOverlay();
+        galleries[currentCategory].showOverlay();
         setTimeout("gallery.hideOverlay();", 2500);
     }, 1200);
     
 }
 
-$(function(){
-   gallery = $('#gallery').galleryView({
-       panel_width: 728,
+function initCategoryGallery(category){
+    return $('#gallery_' + category).galleryView({
+       panel_width: 750,
        show_overlays: true,
        show_captions: true,
+       show_filmstrip: false,
        filmstrip_position: 'top',
        callbacks: {
            imageChanged: function(image){
@@ -29,8 +30,27 @@ $(function(){
            }
        }
    });
+}
+
+function initCategoryMosaicThumbs(category){
+   var self = this;
+   var thumbsContainer=$("#thumbs_mosaic_container");
+   var className = category == "publicidad" ? "publi" : category;
+   $("#gallery_" + category + " li img").each(function(){
+       thumbsContainer.append(
+            "<div class='thumb_container " + className + "'>"+
+            "<img src='" + $(this).attr("src") + "'></img></div>");
+   });
+}
+$(function(){
+   currentCategory= "publicidad";
+   galleries = {}
+   galleries[currentCategory] = initCategoryMosaicThumbs(currentCategory);
+   
+   galleries[currentCategory] = initCategoryGallery(currentCategory);
+   
    selectListProject(1);
-   gallery.startSlideshow()
+   galleries[currentCategory].startSlideshow()
    setTimeout("showAndHideOverlay();", 1);
    $("li.project_link a").bind("click", function(e,elem){
        e.preventDefault();

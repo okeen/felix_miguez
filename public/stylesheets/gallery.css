@@ -1,62 +1,77 @@
 /* line 4, scss/gallery.scss */
 div#project_list {
-  padding: 5px;
   height: 459px;
 }
-/* line 8, scss/gallery.scss */
+/* line 6, scss/gallery.scss */
+div#project_list h3 {
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+/* line 10, scss/gallery.scss */
 div#project_list ul {
   list-style: none;
 }
-/* line 10, scss/gallery.scss */
-div#project_list ul li.project_link {
-  margin-left: 0px;
-}
 /* line 12, scss/gallery.scss */
+div#project_list ul li.project_link {
+  margin-left: 15px;
+}
+/* line 14, scss/gallery.scss */
 div#project_list ul li.project_link a {
   color: #5e9cae;
 }
-/* line 15, scss/gallery.scss */
+/* line 17, scss/gallery.scss */
 div#project_list ul li.project_link.selected a {
   color: black;
   font-weight: bolder;
 }
-/* line 21, scss/gallery.scss */
+/* line 23, scss/gallery.scss */
 div#project_list a {
   text-decoration: none;
 }
 
-/* line 27, scss/gallery.scss */
-ul#gallery {
+/* line 29, scss/gallery.scss */
+#gallery_container #thumbs_mosaic_container {
+  height: 220px;
+  border: 5px solid #c1e2e5;
+}
+/* line 33, scss/gallery.scss */
+#gallery_container #thumbs_mosaic_container .thumb_container {
+  height: 30px;
+  width: 100px;
+}
+/* line 36, scss/gallery.scss */
+#gallery_container #thumbs_mosaic_container .thumb_container img {
+  height: 100%;
+  width: auto;
+}
+/* line 39, scss/gallery.scss */
+#gallery_container ul#gallery {
   visibility: hidden;
 }
-
-/* line 31, scss/gallery.scss */
-.gv_caption {
+/* line 43, scss/gallery.scss */
+#gallery_container .gv_caption {
   opacity: 0.8;
   background: white;
 }
-
-/* line 35, scss/gallery.scss */
-.gv_galleryWrap {
+/* line 47, scss/gallery.scss */
+#gallery_container .gv_galleryWrap {
   background-color: #c1e2e5;
+  margin-left: 0px;
 }
-
-/* line 38, scss/gallery.scss */
-.gv_panel img {
+/* line 51, scss/gallery.scss */
+#gallery_container .gv_panel img {
   opacity: 1.0;
   background-color: white;
 }
-
-/* line 43, scss/gallery.scss */
-.gv_frame {
+/* line 56, scss/gallery.scss */
+#gallery_container .gv_frame {
   background: black;
 }
-/* line 46, scss/gallery.scss */
-.gv_frame img {
+/* line 59, scss/gallery.scss */
+#gallery_container .gv_frame img {
   background: white;
 }
-
-/* line 54, scss/gallery.scss */
-.gv_overlay, .gv_showOverlay {
+/* line 67, scss/gallery.scss */
+#gallery_container .gv_overlay, #gallery_container .gv_showOverlay {
   opacity: 0.7;
 }

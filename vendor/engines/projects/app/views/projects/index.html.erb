@@ -6,14 +6,19 @@
 <%= stylesheet_link_tag 'gallery.css' %>
 
 <div id="project_list" class="grid_3">
-  <ul id="projects_publicidad" >
-    <% @projects.by_category("publicidad").each do |project| %>
-      <li data-project-id="<%=project.id%>" class="project_link publi">
-        <%= link_to project.title, project_path(project) %>
-      </li>
-    <% end %>
-  </ul>
+  <div class="project_category_container publi">
+    <h3>Publicidad y web</h3>
+    <ul id="projects_publicidad" >
+      <% @projects.by_category("publicidad").each do |project| %>
+        <li data-project-id="<%=project.id%>" class="project_link publi">
+          <%= link_to project.title, project_path(project) %>
+        </li>
+      <% end %>
+    </ul>
 
+  </div>
+  
+  <h3>Publicaciones</h3>
   <ul id="projects_publicaciones" >
     <% @projects.by_category("publicaciones").each do |project| %>
       <li data-project-id="<%=project.id%>" class="project_link publicaciones">
@@ -22,6 +27,7 @@
     <% end %>
   </ul>
 
+  <h3>Diseño corporativo</h3>
   <ul id="projects_corporativo" >
     <% @projects.by_category("corporativo").each do |project| %>
       <li data-project-id="<%=project.id%>" class="project_link corporativo">
@@ -34,14 +40,18 @@
   
 </div>
 
-<div id="gallery_container" class=" grid_12">
-  <ul id="gallery" >
-    <% @projects.each do |project| %>
+<div id="gallery_container" class=" grid_13">
+  <div id="thumbs_mosaic_container">
+    
+  </div>
+  <ul id="gallery_publicidad" >
+    <% @projects.by_category("publicidad").each do |project| %>
       <li>
         <%= image_tag image_path(project.main_image.url), 
               :p_id=> project.id, 
               :title => project.title, 
-              :longdesc => project.description %>
+              :longdesc => project.description,
+              :class => project.category %>
       </li>
     <% end %>
   </ul>
