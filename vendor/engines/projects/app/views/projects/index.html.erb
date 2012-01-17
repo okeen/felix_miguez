@@ -11,7 +11,7 @@
     <h3 data-category="publicidad" class="active">Publicidad y web</h3>
     <ul id="projects_publicidad" >
       <% @projects.by_category("publicidad").each do |project| %>
-        <li data-project-id="<%=project.id%>" class="project_link publi">
+        <li data-project-id="<%=project.id%>" data-category="publicidad" class="project_link publi">
           <%= link_to project.title, project_path(project) %>
         </li>
       <% end %>
@@ -23,7 +23,7 @@
     <h3 data-category="editorial">Editorial</h3>
     <ul id="projects_publicaciones" >
       <% @projects.by_category("editorial").each do |project| %>
-        <li data-project-id="<%=project.id%>" class="project_link editorial">
+        <li data-project-id="<%=project.id%>" data-category="editorial" class="project_link editorial">
           <%= link_to project.title, project_path(project) %>
         </li>
       <% end %>
@@ -34,7 +34,7 @@
     <h3 data-category="corporativo">Diseño corporativo</h3>
     <ul id="projects_corporativo" >
       <% @projects.by_category("corporativo").each do |project| %>
-        <li data-project-id="<%=project.id%>" class="project_link corporativo">
+        <li data-project-id="<%=project.id%>" data-category="corporativo" class="project_link corporativo">
           <%= link_to project.title, project_path(project) %>
         </li>
       <% end %>

@@ -84,9 +84,9 @@ function categoryClass(category){
 
 function startCategorySlideshow(category){
     $(".gallery_wrapper").removeClass("active");
-    $(".gallery_wrapper." + currentCategoryName()).addClass("active");
+    $(".gallery_wrapper." + categoryClass(category)).addClass("active");
     index=0;
-    playing[currentCategoryName()]=true
+    playing[categoryClass(category)]=true
     showCategoryThumbs(category);
     loopSlideshow(currentCategoryName());
 }
@@ -179,11 +179,19 @@ $(function(){
     $("li.project_link a").bind("click", function(e,elem){
         e.preventDefault();
         if ($(this).hasClass("selected")) return;
-        
-        stopCategorySlideshow(currentCategory);
+        stopCategorySlideshow(currentCategoryName());
         var dad = $(this).parent();
+        var myCategory= dad.attr("data-category");
         var projectId = dad.attr("data-project-id");
+        if (myCategory != currentCategory){
+            currentCategory=myCategory;
+            $(".project_category_container h3").removeClass("active");
+            $(".project_category_container h3[data-category="+myCategory+"]").addClass("active");
+            startCategorySlideshow(categoryClass(myCategory));
+            
+        }
         showProjectImage(projectId);
+        
     });
     
     $(".thumb_container img").bind("click", function(e,elem){
