@@ -11,8 +11,8 @@ function selectGalleryItem(elem){
 function showAndHideOverlay(){
     setTimeout(function(){
         galleries[currentCategory].showOverlay();
-        setTimeout("galleries[currentCategory].hideOverlay();", 2000);
-    }, 800);
+        setTimeout("galleries[currentCategory].hideOverlay();", 4000);
+    }, 000);
     
 }
 
@@ -92,8 +92,10 @@ function startCategorySlideshow(category){
 }
 
 function stopCategorySlideshow(category){
-    if (category == undefined) category = currentCategoryName();
-    playing[categoryClass(category)]=false
+//    if (category == undefined) category = currentCategoryName();
+    //playing[categoryClass(category)]=false;
+    playing["publi"]= playing["corporativo"]= playing["editorial"]= false;
+//    playing[categoryClass(category)]=false;
 }
 function loopSlideshow(category){
     var categoryImages = $(".thumb_container." + category+" img");
@@ -105,7 +107,7 @@ function loopSlideshow(category){
         index= (index+1) % categoryImages.length;
         setTimeout(function(){
             loopSlideshow(category);
-        },5000);
+        },7000);
     }
 }
 function showProjectImage(projectId){

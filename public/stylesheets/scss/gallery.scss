@@ -13,7 +13,12 @@ div#project_list{
         list-style: none;
         li.project_link {
             margin-left: 15px;
-            a {color: $felix_dark}
+            a {
+                  color: $felix_dark;
+                  text-align: left;
+                  text-justify: none;
+                  
+                            }
         }
         li.project_link.selected {
             a {
