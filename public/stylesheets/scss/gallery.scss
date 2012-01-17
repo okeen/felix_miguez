@@ -5,7 +5,9 @@ div#project_list{
     height: 459px;
     h3 {
         margin: {top: 1px; bottom: 5px;}
+        cursor: pointer;
     }
+    h3.active {background: $felix_light;}
     //border-right: 1px solid $felix_dark;
     ul {
         list-style: none;
@@ -17,6 +19,7 @@ div#project_list{
             a {
                 color: black;
                 font-weight: bolder;
+                cursor: text;
             }
         }
     }
@@ -34,27 +37,35 @@ div#project_list{
         .thumb_container {
             display: inline;
             float: left;
+            
             background: black;
             margin: 5px !important;
             /*            height: 30px;
             width: 100px;*/
             overflow-y: none;
             img {
+                cursor: pointer;
                 width: 100%; 
                 height: inherit;
                 background: white;
                 opacity: 0.4;
             }
-            img.active {opacity: 1.0}
+            img.active {
+                opacity: 1.0;
+                cursor: auto;
+            }
         }
         .width1 {width: 81px !important; height: 40px; }
         .width2 {width: 172px !important;height: 90px;}
         
     }
-    ul#gallery {
-        visibility: hidden;
+    .gallery_wrapper {
+        display: none;
+        ul#gallery {
+            visibility: hidden;
+        }
     }
-    
+    .gallery_wrapper.active {display: block;}
     .gv_caption {
         opacity: 0.8;
         background: white;

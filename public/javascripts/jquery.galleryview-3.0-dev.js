@@ -34,7 +34,7 @@ if (typeof Object.create !== 'function') {
         this.attrs = {
             title: img.attr('title'),
             description: img.attr('longdesc'),
-            project_id: img.attr('p_id')
+            project_id: img.attr('data-project-id')
         };
         this.href = null;
         this.dom_obj = null;
