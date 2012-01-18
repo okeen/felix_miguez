@@ -82,13 +82,14 @@ function categoryClass(category){
     return category == "publicidad" ? "publi" : category 
 }
 
-function startCategorySlideshow(category){
+function startCategorySlideshow(category, pausedInit){
     $(".gallery_wrapper").removeClass("active");
     $(".gallery_wrapper." + categoryClass(category)).addClass("active");
     index=0;
     playing[categoryClass(category)]=true
     showCategoryThumbs(category);
-    loopSlideshow(currentCategoryName());
+    if (!pausedInit)
+        loopSlideshow(currentCategoryName());
 }
 
 function stopCategorySlideshow(category){
@@ -99,7 +100,9 @@ function stopCategorySlideshow(category){
 }
 function loopSlideshow(category){
     var categoryImages = $(".thumb_container." + category+" img");
-    if (categoryImages.length <= 1) return;
+    if (index >= categoryImages.length ) 
+        //se llega al final de la lista de imagenes
+        return;
 
     if (playing[category]){
         var projectId = categoryImages[index].getAttribute("data-project-id")
@@ -188,10 +191,11 @@ $(function(){
             currentCategory=myCategory;
             $(".project_category_container h3").removeClass("active");
             $(".project_category_container h3[data-category="+myCategory+"]").addClass("active");
-            startCategorySlideshow(categoryClass(myCategory));
-            
+            startCategorySlideshow(categoryClass(myCategory), true);
+            //setTimeout("showProjectImage(projectId);", 1);
         }
-        showProjectImage(projectId);
+//        else 
+            showProjectImage(projectId);
         
     });
     
@@ -215,7 +219,7 @@ $(function(){
         galleries["editorial"] =initCategoryGallery("editorial");
         
         galleries["corporativo"] = initCategoryGallery("corporativo");
-    }, 3500);
+    }, 1500);
     
    
 });

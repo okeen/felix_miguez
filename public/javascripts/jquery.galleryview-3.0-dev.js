@@ -1001,7 +1001,8 @@ init: function(options,el) {
     this.el = el;
     this.$el = $(el);
     this.id = el.id;
-    this.iterator = this.frameIterator = this.opts.start_frame - 1;
+    this.frameIterator = this.opts.start_frame - 1;
+    this.iterator = 0;
     this.overlayVisible = false;
     this.playing = false;
     this.scrolling = false;
