@@ -39,11 +39,11 @@ div#project_list{
 #gallery_container {
     //border-left: 5px solid $felix_light;
     #thumbs_mosaic_container {
-        height: 190px!important;
-        border-bottom: 1px solid $felix_light;
-        //border-left: 1px solid $felix_light;
-        //border-bottom: none;
-        padding: 15px;
+        height: 200px!important;
+        //border-bottom: 1px solid $felix_light;
+        border: 5px solid $felix_dark;
+        border-bottom: none;
+        padding: 11px;
         .thumb_container {
             display: inline;
             float: left;
@@ -70,7 +70,7 @@ div#project_list{
         
     }
     .gallery_wrapper {
-        border-left: 1px solid $felix_light;
+        //border-left: 1px solid $felix_light;
         display: none;
         ul#gallery {
             visibility: hidden;
@@ -82,7 +82,7 @@ div#project_list{
         background: white;
     }
     .gv_galleryWrap {
-        background-color: white; 
+        background-color: $felix_dark; 
         margin-left: 0px;
     }
     .gv_panel img {
