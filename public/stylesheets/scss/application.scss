@@ -1,11 +1,11 @@
-$felix_light: #C1E2E5;
+$felix_light: #99A49C;
 $felix_dark: #5E9CAE;
 
 header {
     margin: {
-        top:20px !important; bottom:10px !important;
+        top:20px !important; bottom:1px !important;
     }
-    $header_height: 150px;
+    $header_height: 140px;
     height: $header_height;
     //background: white; opacity: 0.9;
     div.logo_container {
@@ -68,6 +68,7 @@ header {
             }
             li.selected, li:hover  {
                 background: $felix_dark;
+                opacity: 1.0;
             }
             li.last { margin-right: 0px;}
         }

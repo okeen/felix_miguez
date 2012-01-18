@@ -1,8 +1,8 @@
 /* line 4, scss/application.scss */
 header {
   margin-top: 20px !important;
-  margin-bottom: 10px !important;
-  height: 150px;
+  margin-bottom: 1px !important;
+  height: 140px;
 }
 /* line 14, scss/application.scss */
 header div.logo_container img {
@@ -52,7 +52,7 @@ header nav#menu ul li {
   margin-left: 1px !important;
   margin-right: 1px !important;
   line-height: 20px;
-  background: #c1e2e5;
+  background: #99a49c;
   /*-webkit-border-radius: 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   border-radius: 4px 4px 4px 4px;
@@ -73,92 +73,93 @@ header nav#menu ul li a:hover {
 /* line 69, scss/application.scss */
 header nav#menu ul li.selected, header nav#menu ul li:hover {
   background: #5e9cae;
+  opacity: 1.0;
 }
-/* line 72, scss/application.scss */
+/* line 73, scss/application.scss */
 header nav#menu ul li.last {
   margin-right: 0px;
 }
 
-/* line 76, scss/application.scss */
+/* line 77, scss/application.scss */
 body.main {
   /*background-image: url("images/Fondo.png");
   background-position: center top;
   background-repeat: no-repeat;
   z-index: 0;*/
 }
-/* line 81, scss/application.scss */
+/* line 82, scss/application.scss */
 body.main section#left, body.main section#right {
   display: none;
 }
 
-/* line 85, scss/application.scss */
+/* line 86, scss/application.scss */
 body h1, body h2, body h3, body h4, body p, body a, body li {
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   text-align: justify;
 }
-/* line 89, scss/application.scss */
+/* line 90, scss/application.scss */
 body h1, body h2, body h3, body h4 {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-/* line 92, scss/application.scss */
+/* line 93, scss/application.scss */
 body h1, body h2, body h3, body h4, body strong {
   color: #5e9cae;
 }
-/* line 95, scss/application.scss */
+/* line 96, scss/application.scss */
 body h1 {
   font-size: 4em;
   margin-bottom: 20px;
 }
-/* line 99, scss/application.scss */
+/* line 100, scss/application.scss */
 body h2 {
   font-size: 1.7em;
   margin-bottom: 20px;
 }
-/* line 103, scss/application.scss */
+/* line 104, scss/application.scss */
 body h3 {
   font-size: 1.3em;
   margin-bottom: 10px;
 }
-/* line 113, scss/application.scss */
+/* line 114, scss/application.scss */
 body h1#body_content_title {
   display: none;
 }
-/* line 115, scss/application.scss */
+/* line 116, scss/application.scss */
 body section#body div.container {
   background: #5e9cae;
 }
-/* line 120, scss/application.scss */
+/* line 121, scss/application.scss */
 body section#left, body section#right {
   width: 50%;
   height: 425px;
 }
-/* line 123, scss/application.scss */
+/* line 124, scss/application.scss */
 body section#left ul, body section#right ul {
   margin-left: 40px;
   list-style: cjk-ideographic;
 }
-/* line 128, scss/application.scss */
+/* line 129, scss/application.scss */
 body section#left img, body section#right img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   display: block;
 }
-/* line 133, scss/application.scss */
+/* line 134, scss/application.scss */
 body section#left {
   width: 50%;
   float: left;
 }
-/* line 138, scss/application.scss */
+/* line 139, scss/application.scss */
 body section#right {
   float: right;
 }
-/* line 140, scss/application.scss */
+/* line 141, scss/application.scss */
 body section#right img {
   margin-top: 45px;
 }
-/* line 145, scss/application.scss */
+/* line 146, scss/application.scss */
 body footer {
   margin-left: 1px;
   margin-top: 33px;
@@ -168,21 +169,21 @@ body footer {
   color: #5e9cae;
 }
 
-/* line 157, scss/application.scss */
+/* line 158, scss/application.scss */
 div#home_texts_web p {
   color: white;
   margin-top: 60px;
   font-size: 3em;
 }
 
-/* line 163, scss/application.scss */
+/* line 164, scss/application.scss */
 div#home_texts_rfid p {
   color: white;
   margin-top: 100px;
   font-size: 3em;
 }
 
-/* line 169, scss/application.scss */
+/* line 170, scss/application.scss */
 div#home_texts_moviles p {
   color: white;
   margin-top: 50px;
@@ -190,29 +191,29 @@ div#home_texts_moviles p {
 }
 
 /*CONTACT*/
-/* line 178, scss/application.scss */
+/* line 179, scss/application.scss */
 div#contact .field label {
   text-align: right;
   margin-right: 10px;
   color: #5e9cae;
 }
-/* line 183, scss/application.scss */
+/* line 184, scss/application.scss */
 div#contact .field input, div#contact .field textarea {
-  border: 2px solid #c1e2e5;
+  border: 2px solid #99a49c;
 }
 
-/* line 188, scss/application.scss */
+/* line 189, scss/application.scss */
 div#contact .message_field {
   margin-left: 20px;
   margin-top: 0px;
 }
-/* line 190, scss/application.scss */
+/* line 191, scss/application.scss */
 div#contact .message_field label {
   text-align: left;
   margin-left: 5px;
 }
 
-/* line 197, scss/application.scss */
+/* line 198, scss/application.scss */
 p#contact_message {
   margin-top: 30px;
   width: 100%;
@@ -224,19 +225,19 @@ p#contact_message {
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 212, scss/application.scss */
+/* line 213, scss/application.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 216, scss/application.scss */
+/* line 217, scss/application.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 224, scss/application.scss */
+/* line 225, scss/application.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -245,7 +246,7 @@ p#contact_message {
   transition-duration: 0.8s;
 }
 
-/* line 231, scss/application.scss */
+/* line 232, scss/application.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -253,7 +254,7 @@ p#contact_message {
   transition-property: height, width;
 }
 
-/* line 238, scss/application.scss */
+/* line 239, scss/application.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -262,7 +263,7 @@ p#contact_message {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 249, scss/application.scss */
+/* line 250, scss/application.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -274,7 +275,7 @@ p#contact_message {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 261, scss/application.scss */
+/* line 262, scss/application.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -282,7 +283,7 @@ p#contact_message {
   transition: none;
 }
 
-/* line 268, scss/application.scss */
+/* line 269, scss/application.scss */
 div#mosaic {
   cursor: pointer;
   margin-top: 80px;
@@ -292,15 +293,15 @@ div#mosaic {
   width: 720px !important;
   float: right;
 }
-/* line 275, scss/application.scss */
+/* line 276, scss/application.scss */
 div#mosaic .mosaic-item {
   margin: 10px;
 }
-/* line 279, scss/application.scss */
+/* line 280, scss/application.scss */
 div#mosaic .mosaic-image img {
   width: 100%;
 }
-/* line 283, scss/application.scss */
+/* line 284, scss/application.scss */
 div#mosaic li.mosaic-item {
   border-radius: 15px 0 0 0;
   display: block;
@@ -308,14 +309,14 @@ div#mosaic li.mosaic-item {
   height: 60px;
   background-color: #5e9cae;
 }
-/* line 288, scss/application.scss */
+/* line 289, scss/application.scss */
 div#mosaic li.mosaic-item h3 {
   color: white;
   text-align: center;
   margin-top: 17px;
 }
 
-/* line 298, scss/application.scss */
+/* line 299, scss/application.scss */
 .loading {
   visibility: hidden;
 }

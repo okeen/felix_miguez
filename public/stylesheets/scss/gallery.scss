@@ -1,4 +1,4 @@
-$felix_light: #C1E2E5;
+$felix_light: #99A49C;
 $felix_dark: #5E9CAE;
 
 div#project_list{
@@ -7,12 +7,15 @@ div#project_list{
         margin: {top: 1px; bottom: 5px;}
         cursor: pointer;
     }
-    h3.active {background: $felix_light;}
+    h3.active {
+            //background: $felix_light;
+            text-decoration: underline;
+            }
     //border-right: 1px solid $felix_dark;
     ul {
         list-style: none;
         li.project_link {
-            margin-left: 15px;
+            margin-left: 10px;
             a {
                   color: $felix_dark;
                   text-align: left;
@@ -22,9 +25,9 @@ div#project_list{
         }
         li.project_link.selected {
             a {
-                color: black;
-                font-weight: bolder;
+                color: $felix_light;
                 cursor: text;
+                //text-decoration: underline;
             }
         }
     }
@@ -34,11 +37,13 @@ div#project_list{
     }
 }
 #gallery_container {
-    
+    //border-left: 5px solid $felix_light;
     #thumbs_mosaic_container {
-        height: 200px!important;
-        border: 5px solid $felix_light;
-        border-bottom: none;
+        height: 190px!important;
+        border-bottom: 1px solid $felix_light;
+        //border-left: 1px solid $felix_light;
+        //border-bottom: none;
+        padding: 15px;
         .thumb_container {
             display: inline;
             float: left;
@@ -65,6 +70,7 @@ div#project_list{
         
     }
     .gallery_wrapper {
+        border-left: 1px solid $felix_light;
         display: none;
         ul#gallery {
             visibility: hidden;
@@ -76,7 +82,7 @@ div#project_list{
         background: white;
     }
     .gv_galleryWrap {
-        background-color: $felix_light; 
+        background-color: white; 
         margin-left: 0px;
     }
     .gv_panel img {

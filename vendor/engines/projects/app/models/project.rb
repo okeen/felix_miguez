@@ -7,6 +7,8 @@ class Project < ActiveRecord::Base
   belongs_to :main_image, :class_name => 'Image'
   belongs_to :secondary_image, :class_name => 'Image'
   
+  default_scope order("position asc")
+  
   scope :by_category, lambda{ |category|
     where("category = :category", category: category)
   }

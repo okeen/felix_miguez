@@ -12,7 +12,7 @@ function showAndHideOverlay(){
     setTimeout(function(){
         galleries[currentCategory].showOverlay();
         setTimeout("galleries[currentCategory].hideOverlay();", 4000);
-    }, 000);
+    }, 300);
     
 }
 
