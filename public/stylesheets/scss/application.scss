@@ -85,7 +85,6 @@ body {
     
     h1, h2, h3, h4, p, a , li{
         font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-        text-align: justify;
     }
     h1, h2, h3, h4 {
         margin: {top: 15px; bottom: 20px;}
@@ -154,37 +153,23 @@ body {
 
 }
 
-//HOME specifics
-div#home_texts_web p {
-    color: white;
-    margin: {top:60px;}
-    font-size: 3em;
-}
-
-div#home_texts_rfid p {
-    color: white;
-    margin: {top:100px;}
-    font-size: 3em;
-}
-
-div#home_texts_moviles p {
-    color: white;
-    margin: {top:50px;}
-    font-size: 3em;
-}
 
 /*CONTACT*/
 
 div#contact .field {
+    
     label {
         text-align: right;
         margin: {right: 10px;}
         color: $felix_dark;
+        width: 150px;
+        float: left;
     }
     input, textarea {
         border: 2px solid $felix_light;
-        
+        width: 200px;
     }
+    textarea {width: 340px !important;}
 }
 div#contact .message_field {
     margin: {left: 20px; top: 0px;}
@@ -203,6 +188,43 @@ p#contact_message {
     font-family: 'Helvetica Neue', Helvetica;
     color: $felix_dark;
 }
+
+
+.inquiries form .actions {
+  margin-left: 150px;
+}
+.inquiries form .actions input {
+  //width: auto;
+}
+.inquiries .field {
+  margin: 12px 0px;
+}
+.inquiries form {
+  padding-top: 12px;
+}
+
+#privacy {
+   margin: {top:20px;left: 20px;}
+   width: 340px;
+   color: $felix_dark;
+   
+    a {
+      color: $felix_light;
+   
+   }
+}
+
+.page_not_live {
+  border: 1px solid #A00027;
+  color: #A00027;
+  background: #FFB1B1;
+  padding:3px 9px;
+  font-weight:bold;
+  width:auto;
+}
+
+
+
 
 //CUSTOMERS specifics
 
@@ -269,8 +291,8 @@ p#contact_message {
 div#mosaic {
     
     cursor: pointer ;
-    margin: {top: 80px; right: 0px !important; left: 0px;}
-    height: 600px !important;
+    margin: {top: 50px; right: 0px !important; left: 0px;}
+    height: 640px !important;
     width: 720px !important;
     float: right;
     .mosaic-item {

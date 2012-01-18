@@ -8,7 +8,8 @@ relayout = function(){
         changeImageWidth();
         $.extend(options, {
             filter: $("." + categories[current]),
-            layoutMode: layouts[Math.ceil(Math.random()*3)]
+            layoutMode: "fitRows"
+//            layoutMode: layouts[Math.ceil(Math.random()*3)]
         });
         container.isotope(options);
         setTimeout("relayout()", 5000);    
@@ -36,8 +37,7 @@ $(function(){
         }
     layouts = {
             0: "masonry",
-            1: "fitColumns",
-            2: "fitRows"
+            1: "fitRows"
     }
     
     container = $('#mosaic');

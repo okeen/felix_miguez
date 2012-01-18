@@ -21,14 +21,19 @@
         <%= f.text_field :phone %>
       </div>
       <div class='field message_field'>
-        <%= f.required_label :message, "Pregunta"  %>
+        <%= f.required_label :message, "Mensaje"  %>
         <%= f.text_area :message, :rows => 8 %>
       </div>
+    
       <div class='actions'>
         <%= f.submit "Enviar" %>
-        <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
       </div>
+    
     <% end %>
+    <div id="privacy">
+      <p>Tu mensaje quedará sujeto a las <%= link_to "políticas de privacidad ", "/pages/privacy-policy", :id => "privacy_link" %> que dicta la Ley vigente</p>
+    </div>
+    
   </div>
 <div class="grid_8">
   <p id="contact_message">

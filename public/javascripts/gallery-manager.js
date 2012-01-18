@@ -174,6 +174,7 @@ $(function(){
     galleries[currentCategory] = initCategoryGallery(currentCategory);
     selectListProject(1);
     //showProjectImage(1);
+    $("#gallery_container").removeClass("loading");
     setTimeout("startCategorySlideshow(currentCategoryName());", 200)
     
     $("li.project_link a").bind("click", function(e,elem){

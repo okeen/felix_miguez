@@ -46,8 +46,19 @@
 	cursor: pointer;
 	z-index: 200;
 }
-.gv_overlay h4 { color: white; margin: 1em; font-weight: bold; }
-.gv_overlay p { color: white; margin: 1em; }
+.gv_overlay h4 { 
+    color: white; 
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold; 
+}
+.gv_overlay p { 
+    color: white;
+    margin: 15px;
+    margin-top: 0px;
+
+}
 
 .gv_infobar {
 	background: #222;

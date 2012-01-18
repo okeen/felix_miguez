@@ -8,21 +8,27 @@ div#project_list{
         cursor: pointer;
     }
     h3.active {
-            //background: $felix_light;
-            text-decoration: underline;
-            }
+        //background: $felix_light;
+        text-decoration: underline;
+    }
     //border-right: 1px solid $felix_dark;
     ul {
         list-style: none;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0em;
+        text-indent: -7px;
+        color: $felix_light ;
+        
         li.project_link {
             margin-left: 10px;
             a {
-                  color: $felix_dark;
-                  text-align: left;
-                  text-justify: none;
-                  
-                            }
+                text-align: left;
+                text-justify: none;
+                color: $felix_dark;
+            }
         }
+        li:before {content: "|"} 
         li.project_link.selected {
             a {
                 color: $felix_light;
@@ -38,10 +44,11 @@ div#project_list{
 }
 #gallery_container {
     //border-left: 5px solid $felix_light;
+    
     #thumbs_mosaic_container {
         height: 200px!important;
         //border-bottom: 1px solid $felix_light;
-        border: 5px solid $felix_dark;
+        border: 5px solid $felix_light;
         border-bottom: none;
         padding: 11px;
         .thumb_container {
@@ -104,4 +111,8 @@ div#project_list{
     .gv_overlay, .gv_showOverlay{
         opacity: 0.7;
     }
+    
+}
+.loading{
+    visibility: hidden;
 }
