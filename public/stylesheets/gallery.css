@@ -17,7 +17,7 @@ div#project_list ul {
   list-style: none;
   list-style: none;
   margin-left: 0;
-  padding-left: 0em;
+  padding-left: 10px;
   text-indent: -7px;
   color: #99a49c;
 }
@@ -75,57 +75,62 @@ div#project_list a {
   opacity: 1.0;
   cursor: auto;
 }
-/* line 75, scss/gallery.scss */
+/* line 74, scss/gallery.scss */
+#gallery_container #thumbs_mosaic_container .thumb_container img.active {
+  border: 1px solid #99a49c !important;
+  /*                padding: 1px;                */
+}
+/* line 79, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .width1 {
   width: 81px !important;
   height: 40px;
 }
-/* line 76, scss/gallery.scss */
+/* line 80, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .width2 {
   width: 172px !important;
   height: 90px;
 }
-/* line 79, scss/gallery.scss */
+/* line 83, scss/gallery.scss */
 #gallery_container .gallery_wrapper {
   display: none;
 }
-/* line 82, scss/gallery.scss */
+/* line 86, scss/gallery.scss */
 #gallery_container .gallery_wrapper ul#gallery {
   visibility: hidden;
 }
-/* line 86, scss/gallery.scss */
+/* line 90, scss/gallery.scss */
 #gallery_container .gallery_wrapper.active {
   display: block;
 }
-/* line 87, scss/gallery.scss */
+/* line 91, scss/gallery.scss */
 #gallery_container .gv_caption {
   opacity: 0.8;
   background: white;
 }
-/* line 91, scss/gallery.scss */
+/* line 95, scss/gallery.scss */
 #gallery_container .gv_galleryWrap {
   background-color: #5e9cae;
   margin-left: 0px;
 }
-/* line 95, scss/gallery.scss */
+/* line 99, scss/gallery.scss */
 #gallery_container .gv_panel img {
   opacity: 1.0;
   background-color: white;
 }
-/* line 100, scss/gallery.scss */
+/* line 104, scss/gallery.scss */
 #gallery_container .gv_frame {
   background: black;
 }
-/* line 103, scss/gallery.scss */
+/* line 107, scss/gallery.scss */
 #gallery_container .gv_frame img {
   background: white;
 }
-/* line 111, scss/gallery.scss */
+/* line 115, scss/gallery.scss */
 #gallery_container .gv_overlay, #gallery_container .gv_showOverlay {
   opacity: 0.7;
 }
 
-/* line 116, scss/gallery.scss */
+/* line 120, scss/gallery.scss */
 .loading {
   visibility: hidden;
 }
