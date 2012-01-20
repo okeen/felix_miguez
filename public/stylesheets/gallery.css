@@ -73,7 +73,7 @@ div#project_list a {
   border-bottom: none;
   padding: 11px;
 }
-/* line 71, scss/gallery.scss */
+/* line 69, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container {
   display: inline;
   float: left;
@@ -83,7 +83,7 @@ div#project_list a {
   width: 100px;*/
   overflow-y: none;
 }
-/* line 80, scss/gallery.scss */
+/* line 78, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container img {
   cursor: pointer;
   width: 100%;
@@ -91,67 +91,67 @@ div#project_list a {
   background: white;
   opacity: 0.4;
 }
-/* line 87, scss/gallery.scss */
+/* line 85, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container img.active {
   opacity: 1.0;
   cursor: auto;
 }
-/* line 91, scss/gallery.scss */
+/* line 89, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container img.active {
   border: 1px solid #99a49c !important;
   /*                padding: 1px;                */
 }
-/* line 96, scss/gallery.scss */
+/* line 94, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .width1 {
   width: 81px !important;
   height: 40px;
 }
-/* line 97, scss/gallery.scss */
+/* line 95, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .width2 {
   width: 172px !important;
   height: 90px;
 }
-/* line 100, scss/gallery.scss */
+/* line 98, scss/gallery.scss */
 #gallery_container .gallery_wrapper {
   display: none;
 }
-/* line 103, scss/gallery.scss */
+/* line 101, scss/gallery.scss */
 #gallery_container .gallery_wrapper ul#gallery {
   visibility: hidden;
 }
-/* line 107, scss/gallery.scss */
+/* line 105, scss/gallery.scss */
 #gallery_container .gallery_wrapper.active {
   display: block;
 }
-/* line 108, scss/gallery.scss */
+/* line 106, scss/gallery.scss */
 #gallery_container .gv_caption {
   opacity: 0.8;
   background: white;
 }
-/* line 112, scss/gallery.scss */
+/* line 110, scss/gallery.scss */
 #gallery_container .gv_galleryWrap {
   background-color: #5e9cae;
   margin-left: 0px;
 }
-/* line 116, scss/gallery.scss */
+/* line 114, scss/gallery.scss */
 #gallery_container .gv_panel img {
   opacity: 1.0;
   background-color: white;
 }
-/* line 121, scss/gallery.scss */
+/* line 119, scss/gallery.scss */
 #gallery_container .gv_frame {
   background: black;
 }
-/* line 124, scss/gallery.scss */
+/* line 122, scss/gallery.scss */
 #gallery_container .gv_frame img {
   background: white;
 }
-/* line 132, scss/gallery.scss */
+/* line 130, scss/gallery.scss */
 #gallery_container .gv_overlay, #gallery_container .gv_showOverlay {
   opacity: 0.7;
 }
 
-/* line 137, scss/gallery.scss */
+/* line 135, scss/gallery.scss */
 .loading {
   visibility: hidden;
 }
