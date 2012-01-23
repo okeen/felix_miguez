@@ -44,9 +44,10 @@ $(function(){
     container.bind("click", function(){
         window.location= "/projects"
     })
+    
     options={
             itemSelector : ".mosaic-item" ,
-            filter: $("." + categories[current]),
+            filter: $(".no_one"),
             layoutMode : 'masonry',
             columnWidth: 200,
             sortBy: 'rand',
@@ -63,7 +64,12 @@ $(function(){
         changeImageWidth();
         $('#mosaic').isotope(options);
         container.removeClass("loading");
+        $.extend(options, {filter:  $("." + categories[current])});
+        setTimeout(function(){
+            $('#mosaic').isotope(options);
+            setTimeout("relayout();", 5000);
+        }, 500);  
     });
-    setTimeout("relayout()", 5000);  
+    
 });
     

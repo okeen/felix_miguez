@@ -146,6 +146,7 @@ body {
         margin: {left: 1px; top: 33px;}
         //border-top: 2px solid $etware_blue !important;
         padding: {top:6px; left: 10px;}
+        text-align: right;
         font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
         color: $felix_dark;
     }
@@ -292,7 +293,7 @@ div#mosaic {
     
     cursor: pointer ;
     margin: {top: 50px; right: 0px !important; left: 0px;}
-    height: 640px !important;
+    height: 580px !important;
     width: 720px !important;
     float: right;
     .mosaic-item {

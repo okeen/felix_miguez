@@ -164,12 +164,13 @@ body footer {
   margin-top: 33px;
   padding-top: 6px;
   padding-left: 10px;
+  text-align: right;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #5e9cae;
 }
 
 /*CONTACT*/
-/* line 161, scss/application.scss */
+/* line 162, scss/application.scss */
 div#contact .field label {
   text-align: right;
   margin-right: 10px;
@@ -177,28 +178,28 @@ div#contact .field label {
   width: 150px;
   float: left;
 }
-/* line 168, scss/application.scss */
+/* line 169, scss/application.scss */
 div#contact .field input, div#contact .field textarea {
   border: 2px solid #99a49c;
   width: 200px;
 }
-/* line 172, scss/application.scss */
+/* line 173, scss/application.scss */
 div#contact .field textarea {
   width: 340px !important;
 }
 
-/* line 174, scss/application.scss */
+/* line 175, scss/application.scss */
 div#contact .message_field {
   margin-left: 20px;
   margin-top: 0px;
 }
-/* line 176, scss/application.scss */
+/* line 177, scss/application.scss */
 div#contact .message_field label {
   text-align: left;
   margin-left: 5px;
 }
 
-/* line 183, scss/application.scss */
+/* line 184, scss/application.scss */
 p#contact_message {
   margin-top: 30px;
   width: 100%;
@@ -208,34 +209,34 @@ p#contact_message {
   color: #5e9cae;
 }
 
-/* line 193, scss/application.scss */
+/* line 194, scss/application.scss */
 .inquiries form .actions {
   margin-left: 150px;
 }
 
-/* line 199, scss/application.scss */
+/* line 200, scss/application.scss */
 .inquiries .field {
   margin: 12px 0px;
 }
 
-/* line 202, scss/application.scss */
+/* line 203, scss/application.scss */
 .inquiries form {
   padding-top: 12px;
 }
 
-/* line 206, scss/application.scss */
+/* line 207, scss/application.scss */
 #privacy {
   margin-top: 20px;
   margin-left: 20px;
   width: 340px;
   color: #5e9cae;
 }
-/* line 211, scss/application.scss */
+/* line 212, scss/application.scss */
 #privacy a {
   color: #99a49c;
 }
 
-/* line 217, scss/application.scss */
+/* line 218, scss/application.scss */
 .page_not_live {
   border: 1px solid #A00027;
   color: #A00027;
@@ -247,19 +248,19 @@ p#contact_message {
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 235, scss/application.scss */
+/* line 236, scss/application.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 239, scss/application.scss */
+/* line 240, scss/application.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 247, scss/application.scss */
+/* line 248, scss/application.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -268,7 +269,7 @@ p#contact_message {
   transition-duration: 0.8s;
 }
 
-/* line 254, scss/application.scss */
+/* line 255, scss/application.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -276,7 +277,7 @@ p#contact_message {
   transition-property: height, width;
 }
 
-/* line 261, scss/application.scss */
+/* line 262, scss/application.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -285,7 +286,7 @@ p#contact_message {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 272, scss/application.scss */
+/* line 273, scss/application.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -297,7 +298,7 @@ p#contact_message {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 284, scss/application.scss */
+/* line 285, scss/application.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -305,25 +306,25 @@ p#contact_message {
   transition: none;
 }
 
-/* line 291, scss/application.scss */
+/* line 292, scss/application.scss */
 div#mosaic {
   cursor: pointer;
   margin-top: 50px;
   margin-right: 0px !important;
   margin-left: 0px;
-  height: 640px !important;
+  height: 580px !important;
   width: 720px !important;
   float: right;
 }
-/* line 298, scss/application.scss */
+/* line 299, scss/application.scss */
 div#mosaic .mosaic-item {
   margin: 10px;
 }
-/* line 302, scss/application.scss */
+/* line 303, scss/application.scss */
 div#mosaic .mosaic-image img {
   width: 100%;
 }
-/* line 306, scss/application.scss */
+/* line 307, scss/application.scss */
 div#mosaic li.mosaic-item {
   border-radius: 15px 0 0 0;
   display: block;
@@ -331,14 +332,14 @@ div#mosaic li.mosaic-item {
   height: 60px;
   background-color: #5e9cae;
 }
-/* line 311, scss/application.scss */
+/* line 312, scss/application.scss */
 div#mosaic li.mosaic-item h3 {
   color: white;
   text-align: center;
   margin-top: 17px;
 }
 
-/* line 321, scss/application.scss */
+/* line 322, scss/application.scss */
 .loading {
   visibility: hidden;
 }
