@@ -309,7 +309,7 @@ p#contact_message {
 /* line 292, scss/application.scss */
 div#mosaic {
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-right: 0px !important;
   margin-left: 0px;
   height: 580px !important;

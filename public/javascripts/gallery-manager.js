@@ -83,7 +83,6 @@ function categoryClass(category){
 }
 
 function startCategorySlideshow(category, pausedInit){
-    $("#gallery_container").removeClass("loading");
     $(".gallery_wrapper").removeClass("active");
     $(".gallery_wrapper." + categoryClass(category)).addClass("active");
     index=0;
@@ -178,7 +177,11 @@ $(function(){
     galleries[currentCategory] = initCategoryGallery(currentCategory);
     selectListProject(1);
     //showProjectImage(1);
-    setTimeout("startCategorySlideshow(currentCategoryName());", 200)
+    setTimeout(function(){
+        $("#gallery_container").removeClass("loading");
+        $("#gallery_loading_image_container").remove();
+        startCategorySlideshow(currentCategoryName());
+    }, 2000)
     
     $("li.project_link a").bind("click", function(e,elem){
         e.preventDefault();
@@ -219,7 +222,7 @@ $(function(){
         galleries["editorial"] =initCategoryGallery("editorial");
         
         galleries["corporativo"] = initCategoryGallery("corporativo");
-    }, 1500);
+    }, 3000);
     
    
 });

@@ -155,3 +155,16 @@ div#project_list a {
 .loading {
   visibility: hidden;
 }
+
+/* line 139, scss/gallery.scss */
+#gallery_loading_image_container {
+  background-image: url(/system/images/BAhbBlsHOgZmSSInMjAxMi8wMS8yMy8xNC8yNC80MC85NzYvbG9hZGVyLmdpZgY6BkVU/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 650px;
+}
+
+/* line 146, scss/gallery.scss */
+#gallery_loading_image_container.loaded {
+  display: none;
+}

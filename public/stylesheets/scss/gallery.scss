@@ -135,3 +135,14 @@ div#project_list{
 .loading{
     visibility: hidden;
 }
+
+#gallery_loading_image_container{
+     background-image: url(/system/images/BAhbBlsHOgZmSSInMjAxMi8wMS8yMy8xNC8yNC80MC85NzYvbG9hZGVyLmdpZgY6BkVU/loader.gif) ;
+     background-repeat: no-repeat;
+     background-position: center center;
+     height: 650px;
+}
+
+#gallery_loading_image_container.loaded{
+     display: none;
+}
