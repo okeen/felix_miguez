@@ -307,6 +307,16 @@ div#contact .message_field label {
 }
 
 /* line 292, scss/application.scss */
+#home_left_panel {
+  margin-top: 40px;
+}
+/* line 294, scss/application.scss */
+#home_left_panel h3 {
+  margin-top: 40px;
+  color: #5e9cae;
+}
+
+/* line 302, scss/application.scss */
 div#mosaic {
   cursor: pointer;
   margin-top: 40px;
@@ -316,15 +326,15 @@ div#mosaic {
   width: 720px !important;
   float: right;
 }
-/* line 299, scss/application.scss */
+/* line 309, scss/application.scss */
 div#mosaic .mosaic-item {
   margin: 10px;
 }
-/* line 303, scss/application.scss */
+/* line 313, scss/application.scss */
 div#mosaic .mosaic-image img {
   width: 100%;
 }
-/* line 307, scss/application.scss */
+/* line 317, scss/application.scss */
 div#mosaic li.mosaic-item {
   border-radius: 15px 0 0 0;
   display: block;
@@ -332,14 +342,14 @@ div#mosaic li.mosaic-item {
   height: 60px;
   background-color: #5e9cae;
 }
-/* line 312, scss/application.scss */
+/* line 322, scss/application.scss */
 div#mosaic li.mosaic-item h3 {
   color: white;
   text-align: center;
   margin-top: 17px;
 }
 
-/* line 322, scss/application.scss */
+/* line 332, scss/application.scss */
 .loading {
   visibility: hidden;
 }

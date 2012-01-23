@@ -289,6 +289,16 @@ div#contact .message_field {
           transition: none;
 }
 
+#home_left_panel{
+    margin: {top: 40px;}
+    h3 {
+       margin: {top: 40px;}
+     
+       color: $felix_dark;
+       
+    }
+}
+
 div#mosaic {
     
     cursor: pointer ;

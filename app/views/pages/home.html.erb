@@ -1,11 +1,20 @@
 <%= javascript_include_tag "jquery.isotope" %>
 <%= javascript_include_tag "home-prod" %>
 
-<div class="grid_4">
+<div id="home_left_panel" class="grid_4">
   <%= content_tag :section, :id => "body" do %>
-    <%= image_tag("/system/images/BAhbBlsHOgZmSSIsMjAxMi8wMS8yMy8xMi81OS8yMC84NTIvVGV4dG9JbmljaW8ucG5nBjoGRVQ/TextoInicio.png") %>
+    <%= image_tag("/system/images/BAhbBlsHOgZmSSIsMjAxMi8wMS8yMy8yMy8xOS8wMC84NTQvVGV4dG9JbmljaW8ucG5nBjoGRVQ/TextoInicio.png") %>
   <%  end %>
-
+  <div class="category_text_container corporativo">
+    <h3>Creación y renovación de imagen corporativa, desde la papelería hasta la web</h3>
+  </div>
+  <div class="category_text_container editorial">
+    <h3>Diseño y maquetación de contenidos en papel o digitales: folletos, revistas, libros, e-books, etc.</h3>
+  </div>
+  <div class="category_text_container publi">
+    <h3>Campañas publicitarias,diseño de páginas web y apps para móviles</h3>
+  </div>
+  
 </div>
 
 <div id="mosaic" class="loading" >
