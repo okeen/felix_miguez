@@ -2,7 +2,14 @@
 <%= javascript_include_tag "jquery.easing.1.3" %>
 <%= javascript_include_tag "jquery.isotope" %>
 <%= javascript_include_tag "jquery.galleryview-3.0-dev" %>
-<%= javascript_include_tag "gallery-manager" %>
+
+<%= if Rails.env == "production"
+  javascript_include_tag "gallery-manager-prod" 
+  
+else
+  javascript_include_tag "gallery-manager-prod" 
+end
+%>
 <%= stylesheet_link_tag 'jquery.galleryview-3.0-dev' %>
 <%= stylesheet_link_tag 'gallery.css' %>
 
