@@ -133,7 +133,7 @@ function markProjectThumbAsActive(projectId){
 
 function randomMosaicLayoutMode(){
     var layouts = ['masonry', "fitRows"];
-    return layouts[Math.ceil(Math.random()*3)]
+    return layouts[Math.ceil(Math.random()*2)-1]
 }
 function initMosaic() {
     // modify Isotope's absolute position method
