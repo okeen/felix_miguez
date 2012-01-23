@@ -200,13 +200,13 @@ div#contact .message_field label {
 }
 
 /* line 184, scss/application.scss */
-p#contact_message {
-  margin-top: 30px;
-  width: 100%;
-  font-size: 2em;
-  text-align: left;
-  font-family: 'Helvetica Neue', Helvetica;
-  color: #5e9cae;
+#contact_image_container {
+  margin-top: 25px;
+  width: 500px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 5px;
+  height: 500px;
 }
 
 /* line 194, scss/application.scss */

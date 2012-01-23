@@ -1,5 +1,5 @@
 <% content_for :body_content_left do %>
-  <div id="contact" class='inquiries grid_8'>
+  <div id="contact" class='inquiries grid_7'>
     <%=raw @page[Page.default_parts.first.to_sym] %>
 
     <%= form_for @inquiry do |f| %>
@@ -35,8 +35,8 @@
     </div>
     
   </div>
-<div class="grid_8">
-  <p id="contact_message">
+<div id="contact_image_container">
+  <%= image_tag "/system/images/BAhbBlsHOgZmSSIvMjAxMi8wMS8yMy8yMi8zMC81NC81NDgvSW1hZ2VuQ29udGFjdG8ucG5nBjoGRVQ/ImagenContacto.png" %>
 </div>
 
 <% end %>
