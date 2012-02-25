@@ -1,6 +1,16 @@
 $felix_light: #99A49C;
 $felix_dark: #5E9CAE;
 
+@media screen {
+    @font-face {
+        font-family: 'Doppio One';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Doppio One Regular'), local('DoppioOne-Regular'),
+        url('http://themes.googleusercontent.com/static/fonts/doppioone/v1/DGr_HuCg-_zePcleoqvEXxsxEYwM7FgeyaSgU71cLG0.woff')
+        format('woff');
+    }
+}
 header {
     margin: {
         top:20px !important; bottom:1px !important;
@@ -57,7 +67,7 @@ header {
                     //background:#aaa; 
                     color: white;
                     text-align: center;
-                
+                    
                     display:block; 
                     text-decoration:none;
                 }
@@ -84,7 +94,7 @@ body.main {
 body {
     
     h1, h2, h3, h4, p, a , li{
-        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-family: 'Doppio One',"Helvetica Neue",Helvetica;
     }
     h1, h2, h3, h4 {
         margin: {top: 15px; bottom: 20px;}
@@ -111,10 +121,10 @@ body {
         
     }
     h1#body_content_title {display:none;}
-
+    
     section#body div.container{
         background: $felix_dark;
-
+        
         
     }
     section#left , section#right {
@@ -134,14 +144,14 @@ body {
         width: 50%;
         float: left;
     }
-
+    
     section#right {
         float:right;
         img {   
             margin: {top:45px;}
         }
     }
-
+    
     footer {
         margin: {left: 1px; top: 33px;}
         //border-top: 2px solid $etware_blue !important;
@@ -150,8 +160,8 @@ body {
         font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
         color: $felix_dark;
     }
-
-
+    
+    
 }
 
 
@@ -177,7 +187,7 @@ div#contact .message_field {
     label {
         text-align: left;
         margin: {left: 5px;}
-    
+        
     }
     
 }
@@ -194,36 +204,36 @@ div#contact .message_field {
 }
 
 .inquiries form .actions {
-  margin-left: 150px;
+    margin-left: 150px;
 }
 .inquiries form .actions input {
-  //width: auto;
+    //width: auto;
 }
 .inquiries .field {
-  margin: 12px 0px;
+    margin: 12px 0px;
 }
 .inquiries form {
-  padding-top: 12px;
+    padding-top: 12px;
 }
 
 #privacy {
-   margin: {top:20px;left: 20px;}
-   width: 340px;
-   color: $felix_dark;
-   
+    margin: {top:20px;left: 20px;}
+    width: 340px;
+    color: $felix_dark;
+    
     a {
-      color: $felix_light;
-   
-   }
+        color: $felix_light;
+        
+    }
 }
 
 .page_not_live {
-  border: 1px solid #A00027;
-  color: #A00027;
-  background: #FFB1B1;
-  padding:3px 9px;
-  font-weight:bold;
-  width:auto;
+    border: 1px solid #A00027;
+    color: #A00027;
+    background: #FFB1B1;
+    padding:3px 9px;
+    font-weight:bold;
+    width:auto;
 }
 
 
@@ -236,36 +246,36 @@ div#contact .message_field {
 /**** Isotope Filtering ****/
 
 .isotope-item {
-  z-index: 2;
+    z-index: 2;
 }
 
 .isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
+    pointer-events: none;
+    z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
 
 .isotope,
 .isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
 }
 
 .isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-       -o-transition-property:         top, left, opacity;
-          transition-property:         transform, opacity;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -o-transition-property:         top, left, opacity;
+    transition-property:         transform, opacity;
 }
 
 /**** disabling Isotope CSS3 transitions ****/
@@ -273,10 +283,10 @@ div#contact .message_field {
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
 }
 
 /* End: Recommended Isotope styles */
@@ -285,19 +295,19 @@ div#contact .message_field {
 
 /* disable CSS transitions for containers with infinite scrolling*/
 .isotope.infinite-scrolling {
-  -webkit-transition: none;
-     -moz-transition: none;
-       -o-transition: none;
-          transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
 }
 
 #home_left_panel{
     margin: {top: 40px;}
     h3 {
-       margin: {top: 40px;}
-     
-       color: $felix_dark;
-       
+        margin: {top: 40px;}
+        
+        color: $felix_dark;
+        
     }
 }
 
@@ -309,7 +319,7 @@ div#mosaic {
     width: 720px !important;
     float: right;
     .mosaic-item {
-       margin: 10px
+        margin: 10px
     }
     .mosaic-image {
         img {
@@ -328,10 +338,10 @@ div#mosaic {
         }
         background-color: $felix_dark;
     }
-     
+    
 }
 
 .loading {
     visibility: hidden;
     
- }
+}
