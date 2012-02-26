@@ -93,6 +93,12 @@ header {
         }
     }
 }
+
+footer {
+  p {
+       font-family: 'Exo Light';       
+  }    
+}
 body.main {
     /*background-image: url("images/Fondo.png");
     background-position: center top;
@@ -180,6 +186,7 @@ body {
 div#contact .field {
     
     label {
+        font-family: 'Exo Light';
         text-align: right;
         margin: {right: 10px;}
         color: $felix_dark;
@@ -187,6 +194,7 @@ div#contact .field {
         float: left;
     }
     input, textarea {
+        font-family: 'Exo Light';
         border: 2px solid $felix_light;
         width: 200px;
     }
@@ -194,7 +202,9 @@ div#contact .field {
 }
 div#contact .message_field {
     margin: {left: 20px; top: 0px;}
+    font-family: 'Exo Light';
     label {
+        font-family: 'Exo Light';
         text-align: left;
         margin: {left: 5px;}
         
@@ -215,6 +225,7 @@ div#contact .message_field {
 
 .inquiries form .actions {
     margin-left: 150px;
+    font-family: 'Exo Light';
 }
 .inquiries form .actions input {
     //width: auto;
@@ -224,9 +235,11 @@ div#contact .message_field {
 }
 .inquiries form {
     padding-top: 12px;
+    font-family: 'Exo Light';
 }
 
 #privacy {
+    font-family: 'Exo Light';
     margin: {top:20px;left: 20px;}
     width: 340px;
     color: $felix_dark;

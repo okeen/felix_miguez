@@ -27,25 +27,26 @@ div#project_list ul li.project_link {
 }
 /* line 25, scss/gallery.scss */
 div#project_list ul li.project_link a {
+  font-family: 'Exo Light';
   text-align: left;
   text-justify: none;
   color: #5e9cae;
 }
-/* line 31, scss/gallery.scss */
+/* line 32, scss/gallery.scss */
 div#project_list ul li:before {
   content: "|";
 }
-/* line 33, scss/gallery.scss */
+/* line 34, scss/gallery.scss */
 div#project_list ul li.project_link.selected a {
   color: #99a49c;
   cursor: text;
 }
-/* line 40, scss/gallery.scss */
+/* line 41, scss/gallery.scss */
 div#project_list a {
   text-decoration: none;
 }
 
-/* line 48, scss/gallery.scss */
+/* line 49, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container {
   border-radius: 15px 15px 0 0;
   /*        background: -moz-linear-gradient(top, rgba(220,226,229,0.12) 0%, rgba(220,226,229,0.2) 10%, rgba(179,202,214,0.44) 39%, rgba(140,187,209,0.66) 66%, rgba(140,187,209,0.81) 84%, rgba(94,156,174,0.94) 100%);  FF3.6+ 
@@ -73,7 +74,7 @@ div#project_list a {
   border-bottom: none;
   padding: 11px;
 }
-/* line 69, scss/gallery.scss */
+/* line 70, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container {
   display: inline;
   float: left;
@@ -83,7 +84,7 @@ div#project_list a {
   width: 100px;*/
   overflow-y: none;
 }
-/* line 78, scss/gallery.scss */
+/* line 79, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container img {
   cursor: pointer;
   width: 100%;
@@ -91,72 +92,72 @@ div#project_list a {
   background: white;
   opacity: 0.4;
 }
-/* line 85, scss/gallery.scss */
+/* line 86, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container img.active {
   opacity: 1.0;
   cursor: auto;
 }
-/* line 89, scss/gallery.scss */
+/* line 90, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .thumb_container img.active {
   border: 1px solid #99a49c !important;
   /*                padding: 1px;                */
 }
-/* line 94, scss/gallery.scss */
+/* line 95, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .width1 {
   width: 81px !important;
   height: 40px;
 }
-/* line 95, scss/gallery.scss */
+/* line 96, scss/gallery.scss */
 #gallery_container #thumbs_mosaic_container .width2 {
   width: 172px !important;
   height: 90px;
 }
-/* line 98, scss/gallery.scss */
+/* line 99, scss/gallery.scss */
 #gallery_container .gallery_wrapper {
   display: none;
 }
-/* line 101, scss/gallery.scss */
+/* line 102, scss/gallery.scss */
 #gallery_container .gallery_wrapper ul#gallery {
   visibility: hidden;
 }
-/* line 105, scss/gallery.scss */
+/* line 106, scss/gallery.scss */
 #gallery_container .gallery_wrapper.active {
   display: block;
 }
-/* line 106, scss/gallery.scss */
+/* line 107, scss/gallery.scss */
 #gallery_container .gv_caption {
   opacity: 0.8;
   background: white;
 }
-/* line 110, scss/gallery.scss */
+/* line 111, scss/gallery.scss */
 #gallery_container .gv_galleryWrap {
   background-color: #5e9cae;
   margin-left: 0px;
 }
-/* line 114, scss/gallery.scss */
+/* line 115, scss/gallery.scss */
 #gallery_container .gv_panel img {
   opacity: 1.0;
   background-color: white;
 }
-/* line 119, scss/gallery.scss */
+/* line 120, scss/gallery.scss */
 #gallery_container .gv_frame {
   background: black;
 }
-/* line 122, scss/gallery.scss */
+/* line 123, scss/gallery.scss */
 #gallery_container .gv_frame img {
   background: white;
 }
-/* line 130, scss/gallery.scss */
+/* line 131, scss/gallery.scss */
 #gallery_container .gv_overlay, #gallery_container .gv_showOverlay {
   opacity: 0.7;
 }
 
-/* line 135, scss/gallery.scss */
+/* line 136, scss/gallery.scss */
 .loading {
   visibility: hidden;
 }
 
-/* line 139, scss/gallery.scss */
+/* line 140, scss/gallery.scss */
 #gallery_loading_image_container {
   background-image: url(/system/images/BAhbBlsHOgZmSSInMjAxMi8wMS8yMy8xNC8yNC80MC85NzYvbG9hZGVyLmdpZgY6BkVU/loader.gif);
   background-repeat: no-repeat;
@@ -164,7 +165,7 @@ div#project_list a {
   height: 650px;
 }
 
-/* line 146, scss/gallery.scss */
+/* line 147, scss/gallery.scss */
 #gallery_loading_image_container.loaded {
   display: none;
 }
