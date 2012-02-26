@@ -1,0 +1,11 @@
+/* line 1, scss/home.scss */
+.category_text_container h3 {
+  font-family: "Exo Light";
+  font-weight: normal;
+}
+
+/* line 6, scss/home.scss */
+h3.mosaic-item {
+  font-family: "Exo Medium" !important;
+  /*        font-weight: normal;*/
+}
